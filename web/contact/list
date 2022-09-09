@@ -96,7 +96,7 @@
 		};
 		
 		var options = {
-			url : "./proc",
+			url : "https://script.google.com/macros/s/AKfycbypJWL7psSa9XfS4BqW_A-XHSwi-bc5jOi7csR63pr0w2SD7fgOkAS0wtUQwV9DRd4c7A/exec",
 			type : "post",
 			dataType : 'json',
 			contentType: false,
@@ -113,7 +113,7 @@
 			}
 		};
 		
-		// frm.ajaxSubmit(options);
+		frm.ajaxSubmit(options);
 	}
 	// ]]>
 </script>
