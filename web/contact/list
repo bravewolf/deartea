@@ -84,6 +84,7 @@
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
 			console.log(statusText);
 			if (statusText == "success") {
+				console.log(objResponse);
 				if (objResponse["result"] == 'S') {
 					alert("Thank you for submitting");
 					location.reload();
