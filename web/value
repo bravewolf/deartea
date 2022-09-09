@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/gongcha/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/gongcha/assets/js/lib/wow.js"></script>
+<script src="/gongcha/assets/js/common.js"></script>
+<link type="text/css" href="/gongcha/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/gongcha/assets/js/check.js"></script>
+<script type="text/javascript" src="/gongcha/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/gongcha/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+</div>
+
+	<div id="wrap" class="sub">
+		<header id="header" class="header" data-wow-duration="2s">
+	<h1><a href="/gongcha/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<nav id="menu" class="nav">
+		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+		<ul class="gnb">
+			<li><a href="/gongcha/web/story">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+			<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a href="/gongcha/web/menu/list">Menu</a></li>
+			<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+		</ul>
+		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+	</nav>
+</header>
+		<div id="content" class="values">
+			<div class="section head-bumper"></div>
+			<div class="section values-header" data-header-color="defult" data-header-fix="fixed">
+				<div class="content-wrap">
+					<p class="text-label wow fadeInUp">Sứ mệnh</p>
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="300ms">Đem tới niềm vui <br class="only-mo"> và cảm hứng<br>cho bạn <br class="only-mo">mỗi ngày</h2>
+				</div>
+			</div>
+			<div class="section img-wrap wow fadeInUp" data-header-color="dark">
+				<img srcset="/gongcha/assets/images/values/img-values_mo.jpg 750w,
+							/gongcha/assets/images/values/img-values_tb.jpg 1024w,
+							/gongcha/assets/images/values/img-values.jpg 1920w"
+					sizes="(max-width: 750px) 750px,
+							(max-width: 1024px) 1024px,
+							1240px"
+					src="/gongcha/assets/images/values/img-values.jpg" alt="Satisfaction beyond expectation"
+					class="img" />
+			</div>
+			<div class="section list" data-header-color="defult">
+				<h3 class="line-title wow fadeInUp">Giá trị chúng mình đem lại</h3>
+				<ul class="list">
+					<li>
+						<div class="item value">
+							<p class="title wow fadeInUp">Quality</p>
+							
+							<p class="text wow fadeInUp">We select only premium quality tea leaves and ingredients to create satisfaction that <br class="only-mo">goes beyond expec&shy;tations. We value the entire process of tea production, from cultivation to the selection of tea leaves, drying, fermentation, and purification.</p>
+							
+						</div>
+					</li>
+					<li>
+						<div class="item value">
+							<p class="title wow fadeInUp">Integrity</p>
+							
+							<p class="text wow fadeInUp">Our tea masters produce exceptional products with a commitment to the highest level of <br class="only-pc">craftsmanship. We follow precise recipes and standards to ensure <br class="only-tb">consistency at all our stores.</p>
+							
+						</div>
+					</li>
+					<li>
+						<div class="item value">
+							<p class="title wow fadeInUp">Innovation</p>
+							
+							<p class="text wow fadeInUp">We aspire to inspire and make the ordinary extraordinary. We continue to stand <br class="only-tb">at the forefront <br class="only-pc">of trends and to challenge norms with innovation and creativity</p>
+						</div>
+					</li>
+					<!--[Ã¬ÂÂÃ¬ÂÂÃ«Â³ÂÃªÂ²Â½]2021-06-01-->
+					<li>
+						<div class="item value">
+							<p class="title wow fadeInUp">Respect</p>
+							
+							<p class="text wow fadeInUp">At our stores, we greet everyone warmly and sincerely to create happiness not only in every cup, <br class="only-pc">but in every heart. We treat our customers and team <br class="only-tb">members with integrity and dignity.</p>
+							
+						</div>
+					</li>
+					<!--//[Ã¬ÂÂÃ¬ÂÂÃ«Â³ÂÃªÂ²Â½]2021-06-01-->
+					<li>
+						<div class="item value">
+							<p class="title wow fadeInUp">Empathy</p>
+							 
+							<p class="text wow fadeInUp">We have an inclusive vision to positively influence the people and <br class="only-tb">communities <br class="only-pc">around us and create a culture of warmth.</p>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="section philosophy dark-mode  wow fadeInUp" data-header-color="dark">
+				<div class="content-wrap">
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="200ms">Cùng bạn tạo nên những <br class="only-mo"> câu chuyện  <br class="only-mo">tuyệt vời</h2>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<div>
+			<ul>
+				<li><a href="/gongcha/web/story">Giới thiệu</a></li>
+				<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+				<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/gongcha/web/menu/list">Menu</a></li>
+				<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+</div>
+	<script>
+		$(function(){
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,611 @@
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+<link type="text/css" href="/gongcha/assets/css/lib/fullpage.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/gongcha/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/gongcha/assets/js/lib/wow.js"></script>
+<script src="/gongcha/assets/js/common.js"></script>
+<link type="text/css" href="/gongcha/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/gongcha/assets/js/check.js"></script>
+<script type="text/javascript" src="/gongcha/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/gongcha/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+<script type="text/javascript">
+function fnLink( _burl, _tergetYn){
+	if (_tergetYn == "Y") {
+		window.open(_burl);
+	}
+	if (_tergetYn == "N") {
+		window.location.href=_burl;
+	}
+}
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+</div>
+
+	<div id="wrap" class="main">
+	<header id="header" class="header white" data-wow-duration="2s">
+	<h1><a href="/gongcha/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<nav id="menu" class="nav">
+		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+		<ul class="gnb">
+			<li><a href="/gongcha/web/story">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+			<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a href="/gongcha/web/menu/list">Menu</a></li>
+			<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+		</ul>
+		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+	</nav>
+</header>
+
+ <div id="content" class="home">
+		 <div id="secStory" class="section story dark-mode">
+			  <div id="mainGallery" class="main-gallery swiper-container">
+					<ul class="swiper-wrapper">
+						
+							
+								<li class="swiper-slide">
+									<div style="background-image:url('/gongcha/assets/upload/main/20210831/20210831044706254001.png');" class="bg-area only-pc"></div>
+									<div style="background-image:url('/gongcha/assets/upload/main/20210831/20210831044706271002.png');" class="bg-area only-tb"></div>
+									<div style="background-image:url('/gongcha/assets/upload/main/20210831/20210831044706274003.png');" class="bg-area only-mo"></div>
+									<div class="content-wrap">
+										<p class="text-label">Dear Tea</p>
+										<h2 class="section-title large">Never Ending Joy</h2>
+											
+												<a href="#" onclick="javascript:fnLink('/gongcha/web/story', 'N'); return false;" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
+											
+									</div>
+				 				</li>
+							
+						
+				 	</ul>
+					<div class="swiper-pagination"></div>
+					<div class="controller">
+						<button type="button" class="btn play"><span class="blind">play</span></button>
+						<button type="button" class="btn stop"><span class="blind">stop</span></button>
+					</div>
+				</div>
+	     </div>
+
+			<div id="secValues" class="section values">
+				<div class="content-wrap">
+					<p class="text-label">Sứ mệnh</p>
+					<h2 class="section-title medium" data-wow-delay="400ms">Đem tới niềm vui <br class="only-mo"> và cảm hứng<br>cho bạn <br class="only-mo">mỗi ngày</h2>
+					<div class="img-wrap" data-wow-delay="800ms"><img src="/gongcha/assets/images/main/img-values.jpg" alt="product image" class="img"></div>
+					<a href="/gongcha/web/value" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a>
+				</div>
+			</div>
+
+			<div id="secTea" class="section tea dark-mode">
+				<div class="bg-area"></div>
+				<div class="content-wrap">
+					<p class="text-label">Trà của chúng tôi</p>
+					<h2 class="section-title medium">Những lá trà thơm, ngon<br>cao cấp đạt chuẩn</h2>
+					<p class="text">Cùng khám phá <br class="only-mo">những hương vị trà nguyên chất của chúng tôi</p>
+					<a href="/gongcha/web/tea/list" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
+				</div>
+
+			</div>
+
+			<div id="secStore" class="section store">
+				<div class="content-wrap">
+					<!-- <p class="text-label">MENU</p> -->
+					<h2 class="section-title medium" data-wow-delay="400ms">Menu<br class="only-mo"></h2>
+					<div class="img-wrap-menu" data-wow-delay="800ms"><img src="/gongcha/assets/images/menu/Menu-Dear-Tea-01.jpg" alt="product image" class="img"></div>
+					<!-- <a href="/gongcha/web/value" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a> -->
+					<!-- <p class="text-label">OUR MENU</p> -->
+					<!-- <h2 class="section-title medium">Find a Gong cha <br class="only-mo">store near you</h2> -->
+					<!-- <a class="img-wrap map" href="./menu/list"> -->
+						<!-- <img src="/gongcha/assets/images/menu/Menu-Dear-Tea-01.jpg" alt="world map" class="img"> -->
+<!-- 
+						<span class="map-point taiwan animated flash"><i class="ico map"></i></span>
+						<span class="map-point canada animated flash"><i class="ico map"></i></span>
+						<span class="map-point usa animated flash"><i class="ico map"></i></span>
+						<span class="map-point mexico animated flash"><i class="ico map"></i></span>
+						<span class="map-point england animated flash"><i class="ico map"></i></span>
+						<span class="map-point korea on animated flash"><i class="ico map"></i></span>
+						<span class="map-point japan animated flash"><i class="ico map"></i></span>
+						<span class="map-point myanmar animated flash"><i class="ico map"></i></span>
+						<span class="map-point hongkong animated flash"><i class="ico map"></i></span>
+						<span class="map-point macau animated flash"><i class="ico map"></i></span>
+						<span class="map-point philippines animated flash"><i class="ico map"></i></span>
+						<span class="map-point malaysia animated flash"><i class="ico map"></i></span>
+						<span class="map-point singapore animated flash"><i class="ico map"></i></span>
+						<span class="map-point brunei animated flash"><i class="ico map"></i></span>
+						<span class="map-point australia animated flash"><i class="ico map"></i></span>
+						<span class="map-point newzealand animated flash"><i class="ico map"></i></span> -->
+					</a>
+				</div>
+			</div>
+
+			<div id="secFranchise" class="section franchise">
+				<div class="content-wrap">
+					
+					
+					<p class="text-label-0509">CƠ HỘI HỢP TÁC</p>					
+					<h2 class="section-title medium line-title-0509">Trở thành đối tác<br> cùng Dear Tea</h2>
+					<a href="/gongcha/web/franchising/list" class="btn normal">Liên Hệ Ngay<i class="ico arr"></i></a>
+				</div>
+			</div>
+
+			<div id="secFooter" class="section fp-auto-height">
+			
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<div>
+			<ul>
+				<li><a href="/gongcha/web/story">Giới thiệu</a></li>
+				<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+				<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/gongcha/web/menu/list">Menu</a></li>
+				<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+			</div>
+		</div>
+	</div>
+		<!-- // wrap -->
+
+	<script src="/gongcha/assets/js/lib/fullpage.js"></script>
+	<script src="/gongcha/assets/js/lib/swiper.min.js"></script><!--20210120 ie error로 파일 변경  -->
+	<script>
+		//fullpage position
+		var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+		$(document).on('focusin', focusableElementsString, checkFocus);
+		function checkFocus(){
+			if (!$(this).closest('.fp-section.active').length) {
+				$('.fp-section.active').focus();
+			}
+		}
+
+		//resize RWD Img & Position
+		$(window).resize(function () {
+			controllerPosi();
+			swiperMain.update(true);
+			// swiperTeaG.update(true);
+		});
+
+		//fullpage
+		$('#content').fullpage({
+			//anchors: ['story', 'values', 'tea', 'store', 'franchise', 'mainfooter'],
+			autoScrolling: true,
+			scrollOverflow: false,
+			//hybrid: true,
+			fitToSection: true,
+			bigSectionsDestination: 'top',
+			fixedElements: '',
+			touchSensitivity: 5,
+			scrollingSpeed: 1000,
+			navigation: false,
+			showActiveTooltip: true,
+			responsiveWidth: 750,
+			afterResponsive: function(isResponsive){
+				console.log("afterResponsive--" + "isResponsive: " + isResponsive);
+				if(isResponsive){
+					$.fn.fullpage.setAutoScrolling(false);
+
+					//animate
+					$("#secValue").addClass('fp-auto-height');
+				}
+				else{
+					$.fn.fullpage.setAutoScrolling(true);
+				}
+			},
+			onLeave: function (index, nextIndex, direction) {
+				console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+
+				if (index == 1 && direction == 'down') {
+					$('#header').addClass('fixed');
+					$('body').addClass('is-fixed-header');
+
+					//animate
+					$("#secValues .content-wrap .text-label").addClass('animated fadeInDown').css('animation-delay', '.2s');
+					$("#secValues .content-wrap .section-title").addClass('animated fadeInDown').css('animation-delay', '.6s');
+					$("#secValues .content-wrap .img-wrap").addClass('animated fadeInDown').css('animation-delay', '1s');
+					$("#secValues .content-wrap .btn").addClass('animated fadeInDown').css('animation-delay', '1.2s');
+
+					swiperMain.autoplay.stop();
+
+				}
+
+				if (index == 2 && direction == 'up') {
+					$('#header').removeClass('fixed');
+					$('body').removeClass('is-fixed-header');
+
+					swiperMain.autoplay.start();
+				}
+
+				if (index == 2 && direction == 'down') {
+					//animate
+					$("#secTea .content-wrap .text-label").addClass('animated fadeInDown').css('animation-delay', '.2s');
+					$("#secTea .content-wrap .section-title").addClass('animated fadeInDown').css('animation-delay', '.6s');
+					$("#secTea .content-wrap .text").addClass('animated fadeInDown').css('animation-delay', '1s');
+					$("#secTea .content-wrap .btn").addClass('animated fadeInDown').css('animation-delay', '1.2s');
+					// $("#secTea #teaGallery").addClass('animated fadeInUp').css('animation-delay', '1.6s');
+					// $("#secTea #teaGallery li").eq(1).addClass('animated fadeInUp').css('animation-delay', '2s');
+					// $("#secTea #teaGallery li").eq(2).addClass('animated fadeInUp').css('animation-delay', '2.4s');
+				}
+
+				if (index == 3 && direction == 'down') {
+					//animate
+					$("#secStore .content-wrap .text-label").addClass('animated fadeInDown').css('animation-delay', '.2s');
+					$("#secStore .content-wrap .section-title").addClass('animated fadeInDown').css('animation-delay', '.6s');
+					$("#secStore .content-wrap .img-wrap").addClass('animated fadeInDown').css('animation-delay', '1s');
+				}
+
+				if (index == 4 && direction == 'down') {
+					//animate
+					$("#secFranchise .content-wrap .text-label").addClass('animated fadeInDown').css('animation-delay', '.2s');
+					$("#secFranchise .content-wrap .section-title").addClass('animated fadeInDown').css('animation-delay', '.6s');
+					$("#secFranchise .content-wrap .btn").addClass('animated fadeInDown').css('animation-delay', '1s');
+				}
+
+			},
+			afterLoad: function (anchorLink, index) {
+				if($(this).hasClass('dark-mode')) {
+					$('#header').addClass('white');
+					$('#header .btn.menu-open').addClass('white');
+				} else {
+					$('#header').removeClass('white');
+					$('#header .btn.menu-open').removeClass('white');
+				}
+				//
+				// if (index == 3) {
+				// 	//scroll Blocking
+				// 	$.fn.fullpage.setMouseWheelScrolling(false);
+				// 	$.fn.fullpage.setAllowScrolling(false);
+				// 	$.fn.fullpage.setKeyboardScrolling(false);
+				//
+				//
+				// 	var	lastNum = swiperTeaG.slides.length-1;
+				// 	//wheel
+				// 	$('#secTea').on('wheel', function(e) {
+				// 		var delta = e.originalEvent.deltaY;
+				// 		var	activeIndex = swiperTeaG.activeIndex,
+				// 			nextTea = activeIndex + 1,
+				// 			prevTea = activeIndex - 1;
+				//
+				// 		console.log('delta' + delta);
+				// 		if (delta > 90) {
+				// 			swiperTeaG.slideTo(nextTea, 1500, false);
+				// 			if($('#secTea').hasClass('down-possible') && activeIndex==lastNum ) {
+				// 				$.fn.fullpage.moveTo(4);
+				// 				return false;
+				// 			}
+				// 		} else if (delta < -90) {
+				// 			swiperTeaG.slideTo(prevTea, 1500, false);
+				// 			if($('#secTea').hasClass('up-possible') && activeIndex==0 ) {
+				// 				$.fn.fullpage.moveTo(2);
+				// 				return false;
+				// 			}
+				// 		}
+				// 	});
+				//
+				// 	//touch
+				// 	var startX,startY, endX,endY;
+				// 	$("#secTea").on('touchstart',function(event){
+				// 		startX = event.originalEvent.changedTouches[0].screenX;
+				// 		startY = event.originalEvent.changedTouches[0].screenY;
+				// 	});
+				// 	$("#secTea").on('touchend',function(event){
+				// 		endX=event.originalEvent.changedTouches[0].screenX;
+				// 		endY=event.originalEvent.changedTouches[0].screenY;
+				//
+				// 		var	activeIndex = swiperTeaG.activeIndex,
+				// 			nextTea = activeIndex + 1,
+				// 			prevTea = activeIndex - 1;
+				//
+				// 		 console.log('startX:' + startX, 'startY:' + startY, 'endX:' + endX, 'endY:' + endY);
+				// 		if(startY-endY>50){
+				// 			//down
+				// 			swiperTeaG.slideTo(nextTea, 1500, false);
+				// 			if($('#secTea').hasClass('down-possible') && activeIndex==lastNum ) {
+				// 				$.fn.fullpage.moveTo(4);
+				// 				return false;
+				// 			}
+				//
+				// 		} else if (endY-startY>50){
+				// 			//up
+				// 			swiperTeaG.slideTo(prevTea, 1500, false);
+				// 			if($('#secTea').hasClass('up-possible') && activeIndex==0 ) {
+				// 				$.fn.fullpage.moveTo(2);
+				// 				return false;
+				// 			}
+				// 		} else if (startY-endY<50 || endY-startY<50 ){}
+				//
+				// 		if(startX-endX>50){
+				// 			//오른쪽으로 (다음)
+				// 			swiperTeaG.slideTo(nextTea, 1500, false);
+				// 			if($('#secTea').hasClass('down-possible') && activeIndex==lastNum ) {
+				// 				$.fn.fullpage.moveTo(4);
+				// 				return false;
+				// 			}
+				// 		} else if (endX-startX>50){
+				// 			//왼쪽으로 (이전)
+				// 			swiperTeaG.slideTo(prevTea, 1500, false);
+				// 			if($('#secTea').hasClass('up-possible') && activeIndex==0 ) {
+				// 				$.fn.fullpage.moveTo(2);
+				// 				return false;
+				// 			}
+				// 		} else if(startX-endX<50 || endX-startX<50 ){}
+				// 	});
+				//
+				// 	//keydown
+				// 	$('body').on("keydown", function(e){
+				// 		var keycode = e.keyCode;
+				// 		var	activeIndex = swiperTeaG.activeIndex,
+				// 			nextTea = activeIndex + 1,
+				// 			prevTea = activeIndex - 1;
+				//
+				// 		console.log(keycode);
+				// 		if($('#secTea').hasClass('active')) {
+				// 			if( keycode==34 || keycode==40 || keycode==39) {
+				// 				//page down
+				// 				swiperTeaG.slideTo(nextTea, 1500, false);
+				// 				if($('#secTea').hasClass('down-possible') && activeIndex==lastNum ) {
+				// 					$.fn.fullpage.moveTo(4);
+				// 					return false;
+				// 				}
+				//
+				// 			} else if( keycode==33  || keycode==38 || keycode==37) {
+				// 				//page up
+				// 				swiperTeaG.slideTo(prevTea, 1500, false);
+				// 				if($('#secTea').hasClass('up-possible') && activeIndex==0 ) {
+				// 					$.fn.fullpage.moveTo(2);
+				// 					return false;
+				// 				}
+				// 			}
+				// 		}
+				// 	});
+				//
+				// } else {
+				// 	$('#secTea').removeClass('up-possible').removeClass('down-possible');
+				//
+				// 	//scroll reset
+				// 	$.fn.fullpage.setMouseWheelScrolling(true);
+				// 	$.fn.fullpage.setAllowScrolling(true);
+				// 	$.fn.fullpage.setKeyboardScrolling(true);
+				// }
+			},
+		});
+
+		//swiperMain
+		var swiperMain = new Swiper('#mainGallery', {
+			parallax: true,
+			speed:1000,
+			spaceBetween: 0,
+			//zoom: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			keyboard:
+			{
+				enabled: true,
+				onlyInViewport: false,
+			},
+			autoplay:
+			{
+				delay: 7000,//delay 변경 시, #mainGallery .swiper-pagination-bullet-active::after 애니메이션 속도 변경 필요
+				disableOnInteraction: false
+			},
+			loop: true,
+			slidesPerView: 1,
+			pagination: {
+				el: '#mainGallery .swiper-pagination',
+				clickable: true
+			},
+			centeredSlides: true,
+			breakpoints: {
+				750: {
+					spaceBetween: 0,
+				},
+				1024: {
+					spaceBetween: 0,
+				}
+			},
+			on : {
+				slideChange: function() {
+					var swiper = this,
+						defaultSlideDelay = swiper.params.autoplay.delay,
+						activeIndex = swiper.activeIndex,
+						activeSlide = swiper.slides[activeIndex];
+
+					//animate remove
+					$("#mainGallery .bg-area").removeClass('animated fadeIn');
+					$("#mainGallery .text-label").removeClass('animated fadeInUp');
+					$("#mainGallery .section-title").removeClass('animated fadeInUp');
+					$("#mainGallery .btn").removeClass('animated fadeInUp');
+
+					const currentBg = $(activeSlide).find('.bg-area'),
+						currentLabel = $(activeSlide).find('.text-label'),
+						currentTitle = $(activeSlide).find('.section-title'),
+						currentBtn = $(activeSlide).find('.btn');
+					$(currentBg).addClass('animated fadeIn');
+					$(currentLabel).addClass('animated fadeInUp');
+					$(currentTitle).addClass('animated fadeInUp');
+					$(currentBtn).addClass('animated fadeInUp');
+				}
+			}
+		});
+		swiperMain.init();
+
+		//controller Posi
+		var lastDotP, lastDotW, lastDotM;
+		function controllerPosi() {
+			const lastDotP = $('#mainGallery .swiper-pagination-bullet:last-child').position().left,
+				lastDotW = $('#mainGallery .swiper-pagination-bullet:last-child').width(),
+				lastDotM = parseInt($('#mainGallery .swiper-pagination-bullet:last-child').css("marginLeft").replace('px', '')),
+				mainSwBtn = lastDotP + lastDotW + lastDotM;
+
+			$('#mainGallery .controller').css({
+				'left' : mainSwBtn
+			});
+		}
+
+		//console.log(swiperMain.slides.length);
+		if (swiperMain.slides.length > 2) {/* loop ture 3, false 2 */
+			$('#mainGallery').addClass('has-controller');
+			controllerPosi();
+		} else {
+			$('#mainGallery').removeClass('has-controller');
+		}
+
+		//mainGallery Play & Stop
+		$('#mainGallery .btn.play').on('click',function (e) {
+			swiperMain.autoplay.start();
+
+			//bullet progress
+			$('#mainGallery').removeClass('swiper-paused');
+		});
+		$('#mainGallery .btn.stop').on('click',function (e) {
+			swiperMain.autoplay.stop();
+
+			//bullet progress
+			$('#mainGallery').addClass('swiper-paused');
+		});
+
+		// //swiperTeaG
+		// var swiperTeaG = new Swiper('#teaGallery', {
+		// 	//forceToAxis: true,
+		// 	//grabCursor: true,
+		// 	slidesPerView: 'auto',
+		// 	slidesPerGroup: 1,
+		// 	spaceBetween: 20,
+		// 	//mousewheel: true,
+		// 	centeredSlides: true,
+		// 	breakpoints: {
+		// 		750: {
+		// 			spaceBetween: 20,
+		// 		},
+		// 		1024: {
+		// 			spaceBetween: 30,
+		// 		}
+		// 	},
+		// 	on : {
+		// 		slideChange: function() {
+		// 			var swiper = this,
+		// 				activeIndex = swiper.activeIndex,
+		// 				lastSlide = swiper.slides.length - 1,
+		// 				previousIndex = swiper.previousIndex,
+		// 				activeSlide = swiper.slides[activeIndex];
+		// 			//console.log('teaGallery ' + ' lastSlide : ' + lastSlide +' & slideChange : ' + previousIndex +' > '+ activeIndex);
+		//
+		// 			if (activeIndex == lastSlide) {
+		// 				if (previousIndex < activeIndex) {
+		// 					setTimeout(function(){
+		// 						$("#secTea").addClass('down-possible');
+		// 					}, 1000);
+		// 				}
+		// 			}
+		// 			if (activeIndex == 0) {
+		// 				if (previousIndex > activeIndex ) {
+		// 					setTimeout(function(){
+		// 						$("#secTea").addClass('up-possible');
+		// 					}, 1000);
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// });
+		// swiperTeaG.init();
+
+		$(document).keydown(function (e) { var keycode1 = (e.keyCode ? e.keyCode : e.which); if (keycode1 == 0 || keycode1 == 9) { e.preventDefault(); e.stopPropagation(); } });
+	</script>
+</body>
+</html>

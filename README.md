@@ -1,2 +1,0 @@
-# deartea
-thinh

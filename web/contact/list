@@ -1,0 +1,296 @@
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/gongcha/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/gongcha/assets/js/lib/wow.js"></script>
+<script src="/gongcha/assets/js/common.js"></script>
+<link type="text/css" href="/gongcha/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/gongcha/assets/js/check.js"></script>
+<script type="text/javascript" src="/gongcha/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/gongcha/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+<script type="text/javascript">
+// <![CDATA[  
+    function fnProc() {
+		var frm = $("form[name=updateForm]");
+		
+		if( frm.find('input[name=name]').val() == false || frm.find('input[name=name]').val() == "" ){
+		    	alert('Name field is required.');
+		    	frm.find('input[name=name]').focus();
+		    	return;
+		    }
+		if( frm.find('input[name=email]').val() == false || frm.find('input[name=email]').val() == "" ){
+		    	alert('Email field is required.');
+		    	frm.find('input[name=email]').focus();
+		    	return;
+		    }
+		if( frm.find('select[name=subject]').val() == false || frm.find('select[name=subject]').val() == "" ){
+		    	alert('Subject field is required.');
+		    	frm.find('select[name=subject]').focus();
+		    	return;
+		    }
+		if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
+		    	alert('Message field is required.');
+		    	frm.find('textarea[name=message]').focus();
+		    	return;
+		    }
+		if( !$("input:checkbox[id='agree']").is(":checked") == true){
+	    	alert('Please check the personal information collection consent information.');
+	    	$('#agree').focus();
+	    	return;
+	    }
+
+		
+	 // ajaxSubmit 통신 후 처리 작업
+		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
+			 
+			if (statusText == "success") {
+				if (objResponse["result"] == 'S') {
+					alert("Thank you for submitting");
+					location.reload();
+				} else {
+					alert("An error occurred during data transmission.");
+				}
+			} else {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		var options = {
+			url : "./proc",
+			type : "post",
+			dataType : 'json',
+			contentType: false,
+	        processData: false,
+			success : fnApplyCallback,
+			beforeSend: function() {
+				$('.wrap-loading').removeClass('display-none');
+			}, 
+			complete:function(){
+		        $('.wrap-loading').addClass('display-none');
+		    },
+			error : function(data, result, resultMsg) {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		// frm.ajaxSubmit(options);
+	}
+	// ]]>
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+</div>
+
+<div id="wrap" class="sub">
+<header id="header" class="header" data-wow-duration="2s">
+	<h1><a href="/gongcha/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<nav id="menu" class="nav">
+		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+		<ul class="gnb">
+			<li><a href="/gongcha/web/story">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+			<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a href="/gongcha/web/menu/list">Menu</a></li>
+			<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+		</ul>
+		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+	</nav>
+</header>
+	
+	<div id="content" class="form contact">
+			<div class="section head-bumper"></div>
+			<div class="section form-header" data-header-color="defult" data-header-fix="fixed">
+				<div class="content-wrap">
+					<p class="text-label wow fadeInUp">LIÊN HỆ</p>
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="300ms">Chúng tôi rất vui <br class="only-mo">nếu được kết nối cùng bạn</h2>
+				</div>
+			</div>
+			
+			<form name="updateForm" id="updateForm" method="post" onsubmit="return false" enctype="multipart/form-data" class="section form" data-header-color="defult">
+				<fieldset class="section wow fadeInUp" data-wow-delay="600ms">
+					<legend class="blind">partner form</legend>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="name" id="name" title="Name" data-null="not" required />
+						<label class="label" for="name">Tên của bạn<span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" required />
+						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+						<!--<p class="msg">This field is required.</p>-->
+						<!--[D] error시 상위 field addClass(error) P.msg 에러 메세지 -->
+					</div>
+					<div class="field wow fadeInUp">
+					<select class="select" name="subject" id="subject" data-null="not" title="select Subject">
+						<!-- <option value="" >Select</option> -->
+							<option value="Compliment">Khen ngợi</option>
+						
+							<option value="Complaint">Than phiền</option>
+						
+							<option value="Question">Thắc mắc</option>
+						
+							<option value="Other">Vấn đề khác</option>
+						
+					</select>
+						<label class="label" for="subject">Vấn đề phản hồi <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp large">
+						<textarea class="textarea" name="message" id="message" data-null="not" title="message" rows="5" cols="50" required> </textarea>
+						<label class="label" for="message">Nội dung phản hồi <span class="require">*</span></label>
+					</div>
+					<div class="field agree large wow fadeInUp">
+						<p>
+							Thông tin của bạn<br class="only-tb"> sẽ được lưu lại nhé.
+						</p>
+						<label>
+							<input type="checkbox" name="agree" id="agree">
+							<span>Mình đồng ý</span>
+						</label>
+					</div>
+					<div class="button-area wow fadeInUp">
+						<button type="submit" class="btn normal" onclick="javascript:fnProc(); return false;">Gửi Dear Tea<i class="ico arr"></i></button>
+					</div>
+				</fieldset>
+			</form>
+	</div>
+	 
+	
+	<div class="wrap-loading display-none">
+    	<div><img src="/gongcha/assets/images/common/loading.gif" /></div>
+	</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<div>
+			<ul>
+				<li><a href="/gongcha/web/story">Giới thiệu</a></li>
+				<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+				<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/gongcha/web/menu/list">Menu</a></li>
+				<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+</div>
+<script>
+		$(function(){
+
+		});
+</script>
+
+<style type="text/css" >
+	.wrap-loading{ /*화면 전체를 어둡게 합니다.*/
+	    position: fixed;
+	    left:0;
+	    right:0;
+	    top:0;
+	    bottom:0;
+	    background: rgba(0,0,0,0.2); /*not in ie */
+	    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#20000000', endColorstr='#20000000');    /* ie */
+	}
+    .wrap-loading div{ /*로딩 이미지*/
+        position: fixed;
+        top:50%;
+        left:50%;
+        margin-left: -21px;
+        margin-top: -21px;
+    }
+    .display-none{ /*감추기*/
+        display:none;
+    }
+</style>
+
+
+</body>
+</html>

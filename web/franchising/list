@@ -1,0 +1,785 @@
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/gongcha/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/gongcha/assets/js/lib/wow.js"></script>
+<script src="/gongcha/assets/js/common.js"></script>
+<link type="text/css" href="/gongcha/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/gongcha/assets/js/check.js"></script>
+<script type="text/javascript" src="/gongcha/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/gongcha/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+<script type="text/javascript">
+// <![CDATA[  
+    function fnProc() {
+		var frm = $("form[name=updateForm]");
+		
+		
+		if( frm.find('input[name=name]').val() == false || frm.find('input[name=name]').val() == "" ){
+		    	alert('Name field is required.');
+		    	frm.find('input[name=name]').focus();
+		    	return;
+		    }
+		if( frm.find('input[name=email]').val() == false || frm.find('input[name=email]').val() == "" ){
+		    	alert('Email field is required.');
+		    	frm.find('input[name=email]').focus();
+		    	return;
+		    }
+		if( frm.find('select[name=countryItst]').val() == false || frm.find('select[name=countryItst]').val() == "" ){
+		    	alert('Country of Interest field is required.');
+		    	frm.find('select[name=countryItst]').focus();
+		    	return;
+		    }
+		if( frm.find('input[name=location]').val() == false || frm.find('input[name=location]').val() == "" ){
+	    	alert('Store Location field is required.');
+	    	frm.find('input[name=location]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=model]').val() == false || frm.find('select[name=model]').val() == "" ){
+	    	alert('Business Model field is required.');
+	    	frm.find('select[name=model]').focus();
+	    	return;
+	    }
+		if( frm.find('input[name=usd]').val() == false || frm.find('input[name=usd]').val() == "" ){
+	    	alert('Estiated Investment (USD) field is required.');
+	    	frm.find('input[name=usd]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=year]').val() == false || frm.find('select[name=year]').val() == "" ){
+	    	alert('Year field is required.');
+	    	frm.find('select[name=year]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=month]').val() == false || frm.find('select[name=month]').val() == "" ){
+	    	alert('Month field is required.');
+	    	frm.find('select[name=month]').focus();
+	    	return;
+	    }
+		
+		if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
+		    	alert('Message field is required.');
+		    	frm.find('textarea[name=message]').focus();
+		    	return;
+		    }
+		if( !$("input:checkbox[id='agree']").is(":checked") == true){
+	    	alert('Please check the personal information collection consent information.');
+	    	$('#agree').focus();
+	    	return;
+	    }
+
+		
+	 // ajaxSubmit 통신 후 처리 작업
+		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
+		 	if (statusText == "success") {
+				if (objResponse["result"] == 'S') {
+					alert("Thank you for submitting");
+					location.reload();
+				} else {
+					alert("An error occurred during data transmission.");
+				}
+			} else {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		var options = {
+			url : "./proc",
+			type : "post",
+			dataType : 'json',
+			contentType: false,
+	        processData: false,
+			success : fnApplyCallback,
+			beforeSend: function() {
+				$('.wrap-loading').removeClass('display-none');
+			}, 
+			complete:function(){
+		        $('.wrap-loading').addClass('display-none');
+		    },
+			error : function(data, result, resultMsg) {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		// frm.ajaxSubmit(options);
+	}
+	// ]]>
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+</div>
+
+<div id="wrap" class="sub">
+	<header id="header" class="header" data-wow-duration="2s">
+	<h1><a href="/gongcha/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<nav id="menu" class="nav">
+		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+		<ul class="gnb">
+			<li><a href="/gongcha/web/story">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+			<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a href="/gongcha/web/menu/list">Menu</a></li>
+			<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+		</ul>
+		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+	</nav>
+</header>
+	
+<div id="content" class="form franchise">
+			<div class="section head-bumper"></div>
+			<div class="section form-header" data-header-color="defult" data-header-fix="fixed">
+				<div class="content-wrap">
+					<p class="text-label wow fadeInUp">CƠ HỘI HỢP TÁC</p>
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="300ms">Trở thành đối tác<br class="only-mo"> cùng Dear Tea</h2>
+				</div>
+			</div>
+			<form name="updateForm" id="updateForm" method="post" onsubmit="return false" enctype="multipart/form-data" class="section form" data-header-color="defult">
+				<input type="hidden" name="subject" value="FRANCHISING OPPORTUNITIES">
+				<fieldset class="section wow fadeInUp" data-wow-delay="600ms">
+					<legend class="blind">partner form</legend>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="name" id="name" data-null="not" title="Name" />
+						<label class="label" for="name">Tên của bạn <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" />
+						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+					</div>
+					<!-- <div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="compNm" id="compNm" title="Company Name" />
+						<label class="label" for="company">Tên tổ chức (Nếu có)</label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="compgongcha/Web" id="compgongcha/Web" title="Company gongcha/Website" />
+						<label class="label" for="gongcha/website">Website (Nếu có)</label>
+					</div> -->
+					<div class="field wow fadeInUp">
+							<select class="select" name="countryItst" id="countryItst" data-null="not" title="select Country">
+								<option value="" >Tỉnh/thành phố</option>
+								
+									<option value="Afghanistan">Afghanistan</option>
+								
+									<option value="Albania">Albania</option>
+								
+									<option value="Algeria">Algeria</option>
+								
+									<option value="Andorra">Andorra</option>
+								
+									<option value="Angola">Angola</option>
+								
+									<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+								
+									<option value="Argentina">Argentina</option>
+								
+									<option value="Armenia">Armenia</option>
+								
+									<option value="Australia">Australia</option>
+								
+									<option value="Austria">Austria</option>
+								
+									<option value="Azerbaijan">Azerbaijan</option>
+								
+									<option value="TheBahamas">TheBahamas</option>
+								
+									<option value="Bahrain">Bahrain</option>
+								
+									<option value="Bangladesh">Bangladesh</option>
+								
+									<option value="Barbados">Barbados</option>
+								
+									<option value="Belarus">Belarus</option>
+								
+									<option value="Belgium">Belgium</option>
+								
+									<option value="Belize">Belize</option>
+								
+									<option value="Benin">Benin</option>
+								
+									<option value="Bhutan">Bhutan</option>
+								
+									<option value="Bolivia">Bolivia</option>
+								
+									<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+								
+									<option value="Botswana">Botswana</option>
+								
+									<option value="Brazil">Brazil</option>
+								
+									<option value="Brunei">Brunei</option>
+								
+									<option value="Bulgaria">Bulgaria</option>
+								
+									<option value="Burkina Faso">Burkina Faso</option>
+								
+									<option value="Burma">Burma</option>
+								
+									<option value="Burundi">Burundi</option>
+								
+									<option value="Cambodia">Cambodia</option>
+								
+									<option value="Cameroon">Cameroon</option>
+								
+									<option value="Canada">Canada</option>
+								
+									<option value="Cape Verde">Cape Verde</option>
+								
+									<option value="Central African Republic">Central African Republic</option>
+								
+									<option value="Chad">Chad</option>
+								
+									<option value="Chile">Chile</option>
+								
+									<option value="China">China</option>
+								
+									<option value="Colombia">Colombia</option>
+								
+									<option value="Comoros">Comoros</option>
+								
+									<option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+								
+									<option value="Republic of the Congo">Republic of the Congo</option>
+								
+									<option value="Costa Rica">Costa Rica</option>
+								
+									<option value="Cote dIvoire">Cote dIvoire</option>
+								
+									<option value="Croatia">Croatia</option>
+								
+									<option value="Cuba">Cuba</option>
+								
+									<option value="Cyprus">Cyprus</option>
+								
+									<option value="Czech Republic">Czech Republic</option>
+								
+									<option value="Denmark">Denmark</option>
+								
+									<option value="Djibouti">Djibouti</option>
+								
+									<option value="Dominica">Dominica</option>
+								
+									<option value="Dominican Republic">Dominican Republic</option>
+								
+									<option value="East Timor (see Timor-Leste)">East Timor (see Timor-Leste)</option>
+								
+									<option value="Ecuador">Ecuador</option>
+								
+									<option value="Egypt">Egypt</option>
+								
+									<option value="El Salvador">El Salvador</option>
+								
+									<option value="Equatorial Guinea">Equatorial Guinea</option>
+								
+									<option value="Eritrea">Eritrea</option>
+								
+									<option value="Estonia">Estonia</option>
+								
+									<option value="Ethiopia">Ethiopia</option>
+								
+									<option value="Fiji">Fiji</option>
+								
+									<option value="Finland">Finland</option>
+								
+									<option value="France">France</option>
+								
+									<option value="Gabon">Gabon</option>
+								
+									<option value="The Gambia">The Gambia</option>
+								
+									<option value="Georgia">Georgia</option>
+								
+									<option value="Germany">Germany</option>
+								
+									<option value="Ghana">Ghana</option>
+								
+									<option value="Greece">Greece</option>
+								
+									<option value="Grenada">Grenada</option>
+								
+									<option value="Guatemala">Guatemala</option>
+								
+									<option value="Guinea">Guinea</option>
+								
+									<option value="Guinea-Bissau">Guinea-Bissau</option>
+								
+									<option value="Guyana">Guyana</option>
+								
+									<option value="Haiti">Haiti</option>
+								
+									<option value="Holy See">Holy See</option>
+								
+									<option value="Honduras">Honduras</option>
+								
+									<option value="Hong Kong">Hong Kong</option>
+								
+									<option value="Hungary">Hungary</option>
+								
+									<option value="Iceland">Iceland</option>
+								
+									<option value="India">India</option>
+								
+									<option value="Indonesia">Indonesia</option>
+								
+									<option value="Iran">Iran</option>
+								
+									<option value="Iraq">Iraq</option>
+								
+									<option value="Ireland">Ireland</option>
+								
+									<option value="Israel">Israel</option>
+								
+									<option value="Italy">Italy</option>
+								
+									<option value="Jamaica">Jamaica</option>
+								
+									<option value="Japan">Japan</option>
+								
+									<option value="Jordan">Jordan</option>
+								
+									<option value="K">K</option>
+								
+									<option value="Kazakhstan">Kazakhstan</option>
+								
+									<option value="Kenya">Kenya</option>
+								
+									<option value="Kiribati">Kiribati</option>
+								
+									<option value="Kosovo">Kosovo</option>
+								
+									<option value="Kuwait">Kuwait</option>
+								
+									<option value="Kyrgyzstan">Kyrgyzstan</option>
+								
+									<option value="Laos">Laos</option>
+								
+									<option value="Latvia">Latvia</option>
+								
+									<option value="Lebanon">Lebanon</option>
+								
+									<option value="Lesotho">Lesotho</option>
+								
+									<option value="Liberia">Liberia</option>
+								
+									<option value="Libya">Libya</option>
+								
+									<option value="Liechtenstein">Liechtenstein</option>
+								
+									<option value="Lithuania">Lithuania</option>
+								
+									<option value="Luxembourg">Luxembourg</option>
+								
+									<option value="Macau">Macau</option>
+								
+									<option value="Macedonia">Macedonia</option>
+								
+									<option value="Madagascar">Madagascar</option>
+								
+									<option value="Malawi">Malawi</option>
+								
+									<option value="Malaysia">Malaysia</option>
+								
+									<option value="Maldives">Maldives</option>
+								
+									<option value="Mali">Mali</option>
+								
+									<option value="Malta">Malta</option>
+								
+									<option value="Marshall Islands">Marshall Islands</option>
+								
+									<option value="Mauritania">Mauritania</option>
+								
+									<option value="Mauritius">Mauritius</option>
+								
+									<option value="Mexico">Mexico</option>
+								
+									<option value="Micronesia">Micronesia</option>
+								
+									<option value="Moldova">Moldova</option>
+								
+									<option value="Monaco">Monaco</option>
+								
+									<option value="Mongolia">Mongolia</option>
+								
+									<option value="Montenegro">Montenegro</option>
+								
+									<option value="Morocco">Morocco</option>
+								
+									<option value="Mozambique">Mozambique</option>
+								
+									<option value="Namibia">Namibia</option>
+								
+									<option value="Nauru">Nauru</option>
+								
+									<option value="Nepal">Nepal</option>
+								
+									<option value="Netherlands">Netherlands</option>
+								
+									<option value="Netherlands Antilles">Netherlands Antilles</option>
+								
+									<option value="New Zealand">New Zealand</option>
+								
+									<option value="Nicaragua">Nicaragua</option>
+								
+									<option value="Niger">Niger</option>
+								
+									<option value="Nigeria">Nigeria</option>
+								
+									<option value="North Korea">North Korea</option>
+								
+									<option value="Norway">Norway</option>
+								
+									<option value="Oman">Oman</option>
+								
+									<option value="Pakistan">Pakistan</option>
+								
+									<option value="Palau">Palau</option>
+								
+									<option value="Palestinian Territories">Palestinian Territories</option>
+								
+									<option value="Panama">Panama</option>
+								
+									<option value="Papua New Guinea">Papua New Guinea</option>
+								
+									<option value="Paraguay">Paraguay</option>
+								
+									<option value="Peru">Peru</option>
+								
+									<option value="Philippines">Philippines</option>
+								
+									<option value="Poland">Poland</option>
+								
+									<option value="Portugal">Portugal</option>
+								
+									<option value="Qatar">Qatar</option>
+								
+									<option value="Romania">Romania</option>
+								
+									<option value="Russia">Russia</option>
+								
+									<option value="Rwanda">Rwanda</option>
+								
+									<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+								
+									<option value="Saint Lucia">Saint Lucia</option>
+								
+									<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+								
+									<option value="Samoa">Samoa</option>
+								
+									<option value="San Marino">San Marino</option>
+								
+									<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+								
+									<option value="Saudi Arabia">Saudi Arabia</option>
+								
+									<option value="Senegal">Senegal</option>
+								
+									<option value="Serbia">Serbia</option>
+								
+									<option value="Seychelles">Seychelles</option>
+								
+									<option value="Sierra Leone">Sierra Leone</option>
+								
+									<option value="Singapore">Singapore</option>
+								
+									<option value="Slovakia">Slovakia</option>
+								
+									<option value="Slovenia">Slovenia</option>
+								
+									<option value="Solomon Islands">Solomon Islands</option>
+								
+									<option value="Somalia">Somalia</option>
+								
+									<option value="South Africa">South Africa</option>
+								
+									<option value="South Korea">South Korea</option>
+								
+									<option value="South Sudan">South Sudan</option>
+								
+									<option value="Spain">Spain</option>
+								
+									<option value="Sri Lanka">Sri Lanka</option>
+								
+									<option value="Sudan">Sudan</option>
+								
+									<option value="Suriname">Suriname</option>
+								
+									<option value="Swaziland">Swaziland</option>
+								
+									<option value="Sweden">Sweden</option>
+								
+									<option value="Switzerland">Switzerland</option>
+								
+									<option value="Syria">Syria</option>
+								
+									<option value="Taiwan">Taiwan</option>
+								
+									<option value="Tajikistan">Tajikistan</option>
+								
+									<option value="Tanzania">Tanzania</option>
+								
+									<option value="Thailand">Thailand</option>
+								
+									<option value="Timor-Leste">Timor-Leste</option>
+								
+									<option value="Togo">Togo</option>
+								
+									<option value="Tonga">Tonga</option>
+								
+									<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+								
+									<option value="Tunisia">Tunisia</option>
+								
+									<option value="Turkey">Turkey</option>
+								
+									<option value="Turkmenistan">Turkmenistan</option>
+								
+									<option value="Tuvalu">Tuvalu</option>
+								
+									<option value="Uganda">Uganda</option>
+								
+									<option value="Ukraine">Ukraine</option>
+								
+									<option value="United Arab Emirates">United Arab Emirates</option>
+								
+									<option value="United Kingdom">United Kingdom</option>
+								
+									<option value="Uruguay">Uruguay</option>
+								
+									<option value="USA">USA</option>
+								
+									<option value="Uzbekistan">Uzbekistan</option>
+								
+									<option value="Vanuatu">Vanuatu</option>
+								
+									<option value="Venezuela">Venezuela</option>
+								
+									<option value="Vietnam">Vietnam</option>
+								
+									<option value="Yemen">Yemen</option>
+								
+									<option value="Zambia">Zambia</option>
+								
+									<option value="Zimbabwe ">Zimbabwe </option>
+								
+							</select>
+						<label class="label" for="country">Tỉnh/thành phố <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="location" id="location" data-null="not" title="Store Location"/>
+						<label class="label" for="location">Vị trí mở quán  <span class="require">*</span></label>
+					</div>
+					<div class="wow fadeInUp"><!--2021-05-21::class삭제-->
+						<span class="subSpan2">Địa chỉ chi tiết nhất có thể</span><!--2021-05-21::문구수정-->
+					</div>
+
+					<!-- <div class="field wow fadeInUp">
+							<select class="select" name="model" id="model" data-null="not" title="select Business Model">
+								<option value="" >Business Model</option>
+								<option value="Area Master Franchise">Area Master Franchisee</option>
+								<option value="One Store Franchise">One Store Franchisee</option>
+							</select>
+						<label class="label" for="model">Business Model <span class="require">*</span></label>
+					</div>
+					 -->
+					<div class="field wow fadeInUp flexC"><!--2021-05-20::class추가-->
+						<span class="subSpan2">VD: 200 triệu</span><!--2021-05-20::추가-->
+						<input type="text" class="input-text" name="usd" id="usd" data-null="not" title="Estiated Investment (USD)" />
+						<label class="label" for="usd">Vốn dự kiến (VNĐ) <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp flexC"><!--2021-05-21::class추가-->
+						<span class="subSpan2">VD: Tháng 8, 2025</span><!--2021-05-20::추가-->
+						<div class="selectWrap"><!--2021-05-21::div태그추가-->
+							<select class="select" name="year" id="year" data-null="not" title="select Year">
+								<option value="" >Năm</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>
+								<option value="2024">2024</option>
+								<option value="2025">2025</option>
+								<option value="2026">2026</option>
+								<option value="2027">2027</option>
+								<option value="2028">2028</option>
+								<option value="2029">2029</option>
+								<option value="2030">2030</option>
+								<option value="2031">2031</option>
+								<option value="2032">2032</option>
+							</select>
+							<!--2021-05-20::span 삭제-->
+							<select class="select" name="month" id="month" data-null="not" title="select Month"><!--2021-05-20::인라인스타일삭제-->
+								<option value="" selected>Tháng</option>
+								<option value="January">Tháng 1</option>
+								<option value="Feburary">Tháng 2</option>
+								<option value="March">Tháng 3</option>
+								<option value="April">Tháng 4</option>
+								<option value="May">Tháng 5</option>
+								<option value="June">Tháng 6</option>
+								<option value="July">Tháng 7</option>
+								<option value="August">Tháng 8</option>
+								<option value="September">Tháng 9</option>
+								<option value="October">Tháng 10</option>
+								<option value="November">Tháng 11</option>
+								<option value="December">Tháng 12</option>
+							</select>
+						</div>
+						<label class="label" for="month">Thời điểm dự kiến khai trương <span class="require">*</span></label>
+					</div>
+					<!-- <div class="field wow fadeInUp flexC">
+						<input type="text" class="input-text" name="applicable" id="applicable" title="Name Of the company that you represent" />
+						<label class="label" for="applicable"><span class="subSpan">Name of the company that you represent, if applicable</span></label>
+					</div> -->
+					<div class="field wow fadeInUp flexC"><!--2021-05-21::class추가/'large'삭제-->
+						<textarea class="textarea" type="text" name="message" id="message" data-null="not" title="message" rows="5" cols="50"> </textarea>
+						<label class="label" for="message">Lời nhắn </label>
+					</div>
+					<div class="field agree large wow fadeInUp">
+						<p>
+							Thông tin của bạn<br class="only-tb"> sẽ được lưu lại nhé.
+						</p>
+						<label>
+							<input type="checkbox" name="agree" id="agree">
+							<span>Mình đồng ý</span>
+						</label>
+					</div>
+					<div class="button-area wow fadeInUp">
+						<button type="submit" class="btn normal" onclick="javascript:fnProc(); return false;">Gửi Dear Tea<i class="ico arr"></i></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+		
+	<div class="wrap-loading display-none">
+    	<div><img src="/gongcha/assets/images/common/loading.gif" /></div>
+	</div>
+		
+	
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<div>
+			<ul>
+				<li><a href="/gongcha/web/story">Giới thiệu</a></li>
+				<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
+				<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/gongcha/web/menu/list">Menu</a></li>
+				<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+</div>
+<script>
+		$(function(){
+
+		});
+</script>
+
+<style type="text/css" >
+	.wrap-loading{ /*화면 전체를 어둡게 합니다.*/
+	    position: fixed;
+	    left:0;
+	    right:0;
+	    top:0;
+	    bottom:0;
+	    background: rgba(0,0,0,0.2); /*not in ie */
+	    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#20000000', endColorstr='#20000000');    /* ie */
+	}
+    .wrap-loading div{ /*로딩 이미지*/
+        position: fixed;
+        top:50%;
+        left:50%;
+        margin-left: -21px;
+        margin-top: -21px;
+    }
+    .display-none{ /*감추기*/
+        display:none;
+    }
+</style>
+
+</body>
+</html>
