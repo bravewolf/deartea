@@ -111,7 +111,7 @@ function fnLink( _burl, _tergetYn){
 							
 								<li class="swiper-slide">
 									<div style="background-image:url('/assets/upload/main/20210831/DSC00949_001.JPG');" class="bg-area only-pc"></div>
-									<div style="background-image:url('/assets/upload/main/20210831/20210831044706271002.png');" class="bg-area only-tb"></div>
+									<div style="background-image:url('/assets/upload/main/20210831/DSC00710_002.JPG');" class="bg-area only-tb"></div>
 									<div style="background-image:url('/assets/upload/main/20210831/DSC00840_003.JPG');" class="bg-area only-mo"></div>
 									<div class="content-wrap">
 										<p class="text-label">Dear Tea</p>
