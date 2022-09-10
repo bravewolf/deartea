@@ -40,13 +40,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="telephone=no" name="format-detection" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<script src="/gongcha/assets/js/jquery-2.2.4.min.js"></script>
-<script src="/gongcha/assets/js/lib/wow.js"></script>
-<script src="/gongcha/assets/js/common.js"></script>
-<link type="text/css" href="/gongcha/assets/css/g_goncha.css" rel="stylesheet" />
-<script type="text/javascript" src="/gongcha/assets/js/check.js"></script>
-<script type="text/javascript" src="/gongcha/assets/js/jquery.form.min.js" charset="utf-8"></script>
-<link rel="shortcut icon" type="image/x-icon" href="/gongcha/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+<script src="/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/assets/js/lib/wow.js"></script>
+<script src="/assets/js/common.js"></script>
+<link type="text/css" href="/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/assets/js/check.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
 
 </head>
 <body>
@@ -74,16 +74,16 @@
 
 <div id="wrap" class="sub">
 	<header id="header" class="header" data-wow-duration="2s">
-	<h1><a href="/gongcha/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<h1><a href="/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
 	<nav id="menu" class="nav">
 		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
 		<ul class="gnb">
-			<li><a href="/gongcha/web/story">Giới thiệu</a></li><!--[D] li.on  -->
-			<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
-			<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
-			<li><a href="/gongcha/web/menu/list">Menu</a></li>
-			<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
-			<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+			<li><a href="/web/story">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a href="/web/value">Sứ mệnh</a></li>
+			<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a href="/web/menu/list">Menu</a></li>
+			<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a href="/web/contact/list">Liên hệ</a></li>
 		</ul>
 		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
 	</nav>
@@ -98,13 +98,13 @@
 			<div class="section highest" data-header-color="defult" data-header-fix="fixed">
 				<div class="img-wrap wow fadeInUp" data-wow-delay="2000ms">
 
-					<img srcset="/gongcha/assets/images/story/img-story_mo.jpg 750w,
-								/gongcha/assets/images/story/img-story_tb.jpg 1024w,
-								/gongcha/assets/images/story/img-story.jpg 1920w"
+					<img srcset="/assets/images/story/img-story_mo.jpg 750w,
+								/assets/images/story/img-story_tb.jpg 1024w,
+								/assets/images/story/img-story.jpg 1920w"
 						sizes="(max-width: 750px) 750px,
 								(max-width: 1024px) 1024px,
 								1025px"
-						src="/gongcha/assets/images/story/img-story.jpg" alt="Satisfaction beyond expectation"
+						src="/assets/images/story/img-story.jpg" alt="Satisfaction beyond expectation"
 						class="img" /><!--20210120 sizes 변경 -->
 				</div>
 				<div class="text-wrap">
@@ -152,12 +152,12 @@
 		<h2 class="logo"><span class="blind">Goncha</span></h2>
 		<div>
 			<ul>
-				<li><a href="/gongcha/web/story">Giới thiệu</a></li>
-				<li><a href="/gongcha/web/value">Sứ mệnh</a></li>
-				<li><a href="/gongcha/web/tea/list">Trà của chúng tôi</a></li>
-				<li><a href="/gongcha/web/menu/list">Menu</a></li>
-				<li><a href="/gongcha/web/franchising/list">Cơ hội hợp tác</a></li>
-				<li><a href="/gongcha/web/contact/list">Liên hệ</a></li>
+				<li><a href="/web/story">Giới thiệu</a></li>
+				<li><a href="/web/value">Sứ mệnh</a></li>
+				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/web/menu/list">Menu</a></li>
+				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/web/contact/list">Liên hệ</a></li>
 			</ul>
 		</div>
 	</div>
