@@ -143,6 +143,16 @@
 					</li>
 				</ul>
 			</div>
+			<div class="section img-wrap wow fadeInUp" data-header-color="dark">
+				<img srcset="/assets/images/values/img-values_mo.jpg 750w,
+							/assets/images/values/img-values_tb.jpg 1024w,
+							/assets/images/values/img-values.jpg 1920w"
+					sizes="(max-width: 750px) 750px,
+							(max-width: 1024px) 1024px,
+							1240px"
+					src="/assets/images/values/img-values.jpg" alt="Satisfaction beyond expectation"
+					class="img" />
+			</div>
 		</div>
 
 
