@@ -21,7 +21,7 @@ a, a:link, a:visited, a:active, a:hover{text-decoration:none;color:inherit;}
 .blind{visibility:hidden;overflow:hidden;position:absolute;top:-1px;left:-1px;width:1px;height:1px;line-height:0;z-index:-1;}
 p{-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;}
 
-
+.text-about{font-size:inherit;line-height: 1.5;font-family: 'Poppins', sans-serif; color:#ffffff; text-color: #ffffff ;}
 /*																					*/
 /* 										layout										*/
 .skip-nav{position:relative;z-index:2000;}

@@ -78,8 +78,8 @@
 		<nav id="menu" class="nav">
 			<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
 			<ul class="gnb">
-				<li><a href="/web/story">Giới thiệu</a></li><!--[D] li.on  -->
-				<li><a href="/web/value">Sứ mệnh</a></li>
+				<li><a href="/web/about">Giới thiệu</a></li><!--[D] li.on  -->
+				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
 				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
 				<li><a href="/web/menu/list">Menu</a></li>
 				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
@@ -314,8 +314,8 @@ Choose from our signature sweet and salty milk foam, cheese foam, chewy  pearls,
 		<h2 class="logo"><span class="blind">Goncha</span></h2>
 		<div>
 			<ul>
-				<li><a href="/web/story">Giới thiệu</a></li>
-				<li><a href="/web/value">Sứ mệnh</a></li>
+				<li><a href="/web/about">Giới thiệu</a></li>
+				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
 				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
 				<li><a href="/web/menu/list">Menu</a></li>
 				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
