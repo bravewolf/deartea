@@ -96,7 +96,7 @@
 		};
 		
 		var options = {
-			url : "https://script.google.com/macros/s/AKfycbypJWL7psSa9XfS4BqW_A-XHSwi-bc5jOi7csR63pr0w2SD7fgOkAS0wtUQwV9DRd4c7A/exec",
+			url : "https://script.google.com/macros/s/AKfycbwqI05-__Dzwqv5O09xIG85KARpn8S16Oa_h7LWt5D0SPf7bAnIsqjPEs1JbRaYe67J/exec",
 			type : "post",
 			dataType : 'json',
 			contentType: false,
