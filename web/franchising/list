@@ -110,7 +110,7 @@
 	 // ajaxSubmit 통신 후 처리 작업
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
 		 	if (statusText == "success") {
-				if (objResponse["result"] == 'S') {
+				if (objResponse["result"] == 'S' || objResponse["result"] == 'success') {
 					alert("Thank you for submitting");
 					location.reload();
 				} else {
