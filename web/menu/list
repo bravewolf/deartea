@@ -207,13 +207,13 @@ $(document).ready(function(){
 		</div>
 	</div>
 	<div class="section img-wrap-menu wow fadeInUp" data-header-color="dark">
-		<img srcset="/assets/images/menu/Menu-Dear-Tea-01.jpg 750w,
-					/assets/images/menu/Menu-Dear-Tea-01.jpg 1024w,
-					/assets/images/menu/Menu-Dear-Tea-01.jpg 1920w"
+		<img srcset="/assets/upload/main/20Sep2022/menu.png 750w,
+					/assets/upload/main/20Sep2022/menu.png 1024w,
+					/assets/upload/main/20Sep2022/menu.png 1920w"
 			sizes="(max-width: 750px) 750px,
 					(max-width: 1024px) 1024px,
 					1240px"
-			src="/assets/images/menu/Menu-Dear-Tea-01.jpg" alt="Satisfaction beyond expectation"
+			src="/assets/upload/main/20Sep2022/menu.png" alt="Satisfaction beyond expectation"
 			class="img" />
 	</div>
 	<div class="section item justify ending" data-header-color="dark">
