@@ -81,10 +81,6 @@ function fnLink( _burl, _tergetYn){
 
 
 
-<div class="skip-nav">
-    <a href="#menu">메뉴 바로가기</a>
-    <a href="#content">본문 바로가기</a>
-</div>
 
 	<div id="wrap" class="main">
 	<header id="header" class="header white" data-wow-duration="2s">
@@ -113,10 +109,11 @@ function fnLink( _burl, _tergetYn){
 									<div style="background-image:url('/assets/upload/main/20Sep2022/web_1.png');" class="bg-area only-pc"></div>
 									<div style="background-image:url('/assets/upload/main/20210831/DSC00710_002.JPG');" class="bg-area only-tb"></div>
 									<div style="background-image:url('/assets/upload/main/20210831/DSC00840_003.JPG');" class="bg-area only-mo"></div>
-									<div class="content-wrap">
+									<div class="content-wrap-header">
 										<p class="text-label">Dear Tea</p>
 										<h2 class="section-title large">Never Ending Joy</h2>
-											
+									</div>
+									<div class="content-wrap">
 										<a href="#" onclick="javascript:fnLink('/web/about', 'N'); return false;" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
 										<p class="text-about"><br>Dear Tea ra đời với khát vọng chia sẻ tới khách hàng những ly trà sữa tự nhiên và cao cấp.<br class="only-mo"> <br class="only-pc">Những lá trà, nguyên liệu, hoa quả thơm ngon nhất được chúng tôi tuyển chọn kỹ càng, <br class="only-pc">trải qua quy trình chế biến nghiêm ngặt. <br class="only-tb"><br class="only-mo">Chúng mình rất vui khi thấy mọi người ở mọi lứa tuổi, hoàn cảnh khác nhau <br class="only-pc">đến Dear Tea để tán gẫu, học tập và làm việc.<br>Từng cốc trà của Dear Tea giống như món quà mang đến niềm vui và cảm hứng mỗi ngày.</p>
 											
@@ -126,18 +123,19 @@ function fnLink( _burl, _tergetYn){
 						
 				 	</ul>
 					<div class="swiper-pagination"></div>
-					<div class="controller">
+					<!-- <div class="controller">
 						<button type="button" class="btn play"><span class="blind">play</span></button>
 						<button type="button" class="btn stop"><span class="blind">stop</span></button>
-					</div>
+					</div> -->
 				</div>
 	     </div>
 
 			<div id="secValues" class="section values">
+				<div class="bg-area"></div>
 				<div class="content-wrap">
 					<p class="text-label">Sứ mệnh</p>
 					<h2 class="section-title medium" data-wow-delay="400ms">Đem tới niềm vui <br class="only-mo"> và cảm hứng<br>cho bạn <br class="only-mo">mỗi ngày</h2>
-					<div class="img-wrap" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/web_2.png" alt="product image" class="img"></div>
+					<!-- <div class="img-wrap" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/web_2.png" alt="product image" class="img"></div> -->
 					<a href="/web/about" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a>
 				</div>
 			</div>
@@ -243,7 +241,7 @@ function fnLink( _burl, _tergetYn){
 		<!-- // wrap -->
 
 	<script src="/assets/js/lib/fullpage.js"></script>
-	<script src="/assets/js/lib/swiper.min.js"></script><!--20210120 ie error로 파일 변경  -->
+	<script src="/assets/js/lib/swiper.min.js"></script><!--20210120 ie error-->
 	<script>
 		//fullpage position
 		var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
