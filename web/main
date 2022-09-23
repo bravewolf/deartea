@@ -82,8 +82,8 @@ function fnLink( _burl, _tergetYn){
 
 
 
-	<div id="wrap" class="main">
-	<header id="header" class="header white" data-wow-duration="2s">
+<div id="wrap" class="main">
+<header id="header" class="header white" data-wow-duration="2s">
 	<h1><a href="/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
 	<nav id="menu" class="nav">
 		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
@@ -100,15 +100,13 @@ function fnLink( _burl, _tergetYn){
 </header>
 
  <div id="content" class="home">
-		 <div id="secStory" class="section story dark-mode">
+		 <div id="secStory" class="section story">
 			  <div id="mainGallery" class="main-gallery swiper-container">
 					<ul class="swiper-wrapper">
-						
-						web_1.png
 								<li class="swiper-slide">
 									<div style="background-image:url('/assets/upload/main/20Sep2022/web_1.png');" class="bg-area only-pc"></div>
-									<div style="background-image:url('/assets/upload/main/20210831/DSC00710_002.JPG');" class="bg-area only-tb"></div>
-									<div style="background-image:url('/assets/upload/main/20210831/DSC00840_003.JPG');" class="bg-area only-mo"></div>
+									<div style="background-image:url('/assets/upload/main/20Sep2022/web_1.png');" class="bg-area only-tb"></div>
+									<div style="background-image:url('/assets/upload/main/20Sep2022/web_1.png');" class="bg-area only-mo"></div>
 									<div class="content-wrap-header">
 										<p class="text-label">Dear Tea</p>
 										<h2 class="section-title large">Never Ending Joy</h2>
@@ -140,7 +138,7 @@ function fnLink( _burl, _tergetYn){
 				</div>
 			</div>
 
-			<div id="secTea" class="section tea dark-mode">
+			<div id="secTea" class="section tea">
 				<div class="bg-area"></div>
 				<div class="content-wrap">
 					<p class="text-label">Trà của chúng tôi</p>
@@ -155,7 +153,16 @@ function fnLink( _burl, _tergetYn){
 				<div class="content-wrap">
 					<!-- <p class="text-label">MENU</p> -->
 					<h2 class="section-title medium" data-wow-delay="400ms">Menu<br class="only-mo"></h2>
-					<div class="img-wrap-menu" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/menu.png" alt="product image" class="img"></div>
+					<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-pc"></div>
+									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-tb"></div>
+									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-mo"></div>
+				 				</li>
+				 	</ul>
+					<!-- <div class="bg-area">
+					</div> -->
+					<!-- <div class="img-wrap-menu" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/menu.png" alt="product image" class="img"></div> -->
 					<!-- <a href="/web/value" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a> -->
 					<!-- <p class="text-label">OUR MENU</p> -->
 					<!-- <h2 class="section-title medium">Find a Gong cha <br class="only-mo">store near you</h2> -->
@@ -213,7 +220,7 @@ function fnLink( _burl, _tergetYn){
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2 class="logo"><span class="blind">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>
