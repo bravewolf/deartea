@@ -88,12 +88,12 @@ function fnLink( _burl, _tergetYn){
 	<nav id="menu" class="nav">
 		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
 		<ul class="gnb">
-			<li><a href="/web/about">Giới thiệu</a></li>
+			<li><a class="navlink" href="/web/about">Giới thiệu</a></li>
 			<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
-			<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
-			<li><a href="/web/menu/list">Menu</a></li>
-			<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
-			<li><a href="/web/contact/list">Liên hệ</a></li>
+			<li><a class="navlink" href="/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a class="navlink" href="/web/menu/list">Menu</a></li>
+			<li><a class="navlink" href="/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a class="navlink" href="/web/contact/list">Liên hệ</a></li>
 		</ul>
 		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
 	</nav>
@@ -130,10 +130,12 @@ function fnLink( _burl, _tergetYn){
 
 			<div id="secValues" class="section values">
 				<div class="bg-area"></div>
-				<div class="content-wrap">
+				<div class="content-wrap-header">
 					<p class="text-label">Sứ mệnh</p>
 					<h2 class="section-title medium" data-wow-delay="400ms">Đem tới niềm vui <br class="only-mo"> và cảm hứng<br>cho bạn <br class="only-mo">mỗi ngày</h2>
 					<!-- <div class="img-wrap" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/web_2.png" alt="product image" class="img"></div> -->
+				</div>
+				<div class="content-wrap">
 					<a href="/web/about" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a>
 				</div>
 			</div>
