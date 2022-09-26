@@ -154,7 +154,7 @@ function fnLink( _burl, _tergetYn){
 			<div id="secStore" class="section store">
 				<div class="content-wrap">
 					<h2 class="section-title medium" data-wow-delay="400ms">Menu<br class="only-mo"></h2>
-					<div class="swiper-wrapper">
+					<div class="swiper-wrapper menu-wrapper">
 						<div class="swiper-slide slide_1 bg-area only-pc"></div>
 						<div class="swiper-slide slide_2 bg-area only-tb"></div>
 						<!-- <div class="swiper-slide slide_3 only-mo menu-mo-1"></div> -->
