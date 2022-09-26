@@ -311,7 +311,7 @@ Choose from our signature sweet and salty milk foam, cheese foam, chewy  pearls,
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>

@@ -219,11 +219,6 @@ $(document).ready(function(){
 	<div class="section item justify ending" data-header-color="dark">
 		<div class="text-wrap">
 			<p class="title wow fadeInUp">
-				<!--
-					20210114 수정사항 요청
-					https://docs.google.com/presentation/d/14cN3OtqrHIyZadjMN_OpV1ApKq9HFEcrg14ziBYZXIY/edit#slide=id.gb534700136_0_28
-					P4 문구 변경
-				 -->
 				<span class="quote open"></span> Tại Dear Tea, chúng mình bỏ rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
 		</div>
 	</div>
@@ -245,7 +240,7 @@ $(document).ready(function(){
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>
@@ -269,10 +264,10 @@ $(document).ready(function(){
 </footer>
 </div>
 
-<script src="/assets/js/lib/swiper.min.js"></script><!--20210120 ie error로 파일 변경  -->
+<script src="/assets/js/lib/swiper.min.js"></script>
 	<script>
 		$(function(){
-			//tab  20210120 수정
+
 			if(!$('body').hasClass('is-mobile')) {
 				var tabSwiper = new Swiper('#tab.swiper-container', {
 					slidesPerView: 'auto',

@@ -106,7 +106,10 @@
 	    	return;
 	    }
 
-		
+	// add date time before submit form
+		var datestr = new Date().toLocaleString();
+		frm.find('input[name=datetime]').val(datestr);	
+
 	 // ajaxSubmit 통신 후 처리 작업
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
 		 	if (statusText == "success") {
@@ -203,6 +206,9 @@
 					<div class="field wow fadeInUp">
 						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" />
 						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+					</div>
+					<div style="display: none;">
+						<input type="text" class="input-text" name="datetime" id="datetime" data-null="not"/>
 					</div>
 					<!-- <div class="field wow fadeInUp">
 						<input type="text" class="input-text" name="compNm" id="compNm" title="Company Name" />
@@ -349,8 +355,8 @@
 						<input type="text" class="input-text" name="location" id="location" data-null="not" title="Store Location"/>
 						<label class="label" for="location">Vị trí mở quán  <span class="require">*</span></label>
 					</div>
-					<div class="wow fadeInUp"><!--2021-05-21::class삭제-->
-						<span class="subSpan2">Địa chỉ chi tiết nhất có thể</span><!--2021-05-21::문구수정-->
+					<div class="wow fadeInUp">
+						<span class="subSpan2">Địa chỉ chi tiết nhất có thể</span>
 					</div>
 
 					<!-- <div class="field wow fadeInUp">
@@ -362,14 +368,14 @@
 						<label class="label" for="model">Business Model <span class="require">*</span></label>
 					</div>
 					 -->
-					<div class="field wow fadeInUp flexC"><!--2021-05-20::class추가-->
-						<span class="subSpan2">VD: 200 triệu</span><!--2021-05-20::추가-->
+					<div class="field wow fadeInUp flexC">
+						<span class="subSpan2">VD: 200 triệu</span>
 						<input type="text" class="input-text" name="usd" id="usd" data-null="not" title="Estiated Investment (USD)" />
 						<label class="label" for="usd">Vốn dự kiến (VNĐ) <span class="require">*</span></label>
 					</div>
-					<div class="field wow fadeInUp flexC"><!--2021-05-21::class추가-->
-						<span class="subSpan2">VD: Tháng 8, 2025</span><!--2021-05-20::추가-->
-						<div class="selectWrap"><!--2021-05-21::div태그추가-->
+					<div class="field wow fadeInUp flexC">
+						<span class="subSpan2">VD: Tháng 8, 2025</span>
+						<div class="selectWrap">
 							<select class="select" name="year" id="year" data-null="not" title="select Year">
 								<option value="" >Năm</option>
 								<option value="2022">2022</option>
@@ -384,8 +390,8 @@
 								<option value="2031">2031</option>
 								<option value="2032">2032</option>
 							</select>
-							<!--2021-05-20::span 삭제-->
-							<select class="select" name="month" id="month" data-null="not" title="select Month"><!--2021-05-20::인라인스타일삭제-->
+
+							<select class="select" name="month" id="month" data-null="not" title="select Month">
 								<option value="" selected>Tháng</option>
 								<option value="January">Tháng 1</option>
 								<option value="Feburary">Tháng 2</option>
@@ -452,7 +458,7 @@
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>

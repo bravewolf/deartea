@@ -79,10 +79,12 @@
 	    	return;
 	    }
 
-		
-	 // ajaxSubmit 통신 후 처리 작업
+		// add date time before submit form
+		var datestr = new Date().toLocaleString();
+		frm.find('input[name=datetime]').val(datestr);	
+
+		// ajaxSubmit
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
-			console.log(statusText);
 			if (statusText == "success") {
 				if (objResponse["result"] == 'S' || objResponse["result"] == 'success') {
 					alert("Thank you for submitting");
@@ -94,7 +96,7 @@
 				alert("An error occurred during data transmission.");
 			}
 		};
-		
+
 		var options = {
 			url : "https://script.google.com/macros/s/AKfycbwqI05-__Dzwqv5O09xIG85KARpn8S16Oa_h7LWt5D0SPf7bAnIsqjPEs1JbRaYe67J/exec",
 			type : "post",
@@ -178,7 +180,9 @@
 						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" required />
 						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
 						<!--<p class="msg">This field is required.</p>-->
-						<!--[D] error시 상위 field addClass(error) P.msg 에러 메세지 -->
+					</div>
+					<div style="display: none;">
+						<input type="text" class="input-text" name="datetime" id="datetime" data-null="not"/>
 					</div>
 					<div class="field wow fadeInUp">
 					<select class="select" name="subject" id="subject" data-null="not" title="select Subject">
@@ -240,7 +244,7 @@
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>

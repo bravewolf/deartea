@@ -153,15 +153,31 @@ function fnLink( _burl, _tergetYn){
 
 			<div id="secStore" class="section store">
 				<div class="content-wrap">
-					<!-- <p class="text-label">MENU</p> -->
 					<h2 class="section-title medium" data-wow-delay="400ms">Menu<br class="only-mo"></h2>
-					<ul class="swiper-wrapper">
-								<li class="swiper-slide">
-									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-pc"></div>
-									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-tb"></div>
-									<div style="background-image:url('/assets/upload/main/20Sep2022/menu.png');" class="bg-area only-mo"></div>
-				 				</li>
-				 	</ul>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide_1 bg-area only-pc"></div>
+						<div class="swiper-slide slide_2 bg-area only-tb"></div>
+						<!-- <div class="swiper-slide slide_3 only-mo menu-mo-1"></div> -->
+						<!-- <div class="swiper-slide slide_4 only-mo menu-mo-2"></div> -->
+						<!-- <div class="swiper-slide slide_5 only-mo menu-mo-3"></div> -->
+						<!-- <div class="swiper-pagination"></div> -->
+						<div class="img-wrap-menu wow fadeInUp only-mo">
+							<img srcset="/assets/upload/main/20Sep2022/menu.png 750w,
+										/assets/upload/main/20Sep2022/menu.png 1024w,
+										/assets/upload/main/20Sep2022/menu.png 1920w"
+								sizes="(max-width: 750px) 750px,
+										(max-width: 1024px) 1024px,
+										1240px"
+								src="/assets/upload/main/20Sep2022/menu.png" alt="Satisfaction beyond expectation"
+								class="img" />
+							<div class="main-menu justify ending">
+								<div class="text-wrap">
+									<p class="title wow fadeInUp">
+										<span class="quote open"></span> Tại Dear Tea, chúng mình bỏ rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- <div class="bg-area">
 					</div> -->
 					<!-- <div class="img-wrap-menu" data-wow-delay="800ms"><img src="/assets/upload/main/20Sep2022/menu.png" alt="product image" class="img"></div> -->
@@ -222,7 +238,7 @@ function fnLink( _burl, _tergetYn){
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Deartea</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>
@@ -251,6 +267,7 @@ function fnLink( _burl, _tergetYn){
 
 	<script src="/assets/js/lib/fullpage.js"></script>
 	<script src="/assets/js/lib/swiper.min.js"></script><!--20210120 ie error-->
+	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 	<script>
 		//fullpage position
 		var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';

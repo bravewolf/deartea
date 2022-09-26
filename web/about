@@ -68,8 +68,8 @@
 
 
 <div class="skip-nav">
-    <a href="#menu">메뉴 바로가기</a>
-    <a href="#content">본문 바로가기</a>
+    <a href="#menu">menu</a>
+    <a href="#content">content</a>
 </div>
 
 <div id="wrap" class="sub">
@@ -89,7 +89,7 @@
 	</nav>
 </header>
 	<div id="content" class="story">
-			<div class="section story-header dark-mode wow fadeIn" data-header-color="dark" data-wow-duration="2s">
+			<div class="section story-header wow fadeIn" data-wow-duration="2s">
 				<div class="content-wrap">
 					<p class="text-label wow fadeInUp" data-wow-delay="1200ms">OUR SLOGAN</p>
 					<h2 class="section-title medium wow fadeInUp" data-wow-delay="1500ms">Never <br class="only-mo">Ending Joy</h2>
@@ -123,7 +123,7 @@
 							<p class="text wow fadeInUp">Liên tục cập nhật các đồ uống trending. Chúng tôi pha chế đồ uống theo cách mà <br class="only-tb">khách hàng mong muốn. Đồ uống của Dear Tea<br class="only-pc"> có thể tùy chỉnh để phù hợp với nhu cầu của mọi người.</p>
 						</div>
 					</li>
-					<!--[Ã¬ÂÂÃ¬ÂÂÃ«Â³ÂÃªÂ²Â½]2021-06-01-->
+
 					<li>
 						<div class="item value">
 							<p class="title wow fadeInUp">Tôn trọng</p>
@@ -132,7 +132,7 @@
 							
 						</div>
 					</li>
-					<!--//[Ã¬ÂÂÃ¬ÂÂÃ«Â³ÂÃªÂ²Â½]2021-06-01-->
+
 					<li>
 						<div class="item value">
 							<p class="title wow fadeInUp">Đam mê</p>
@@ -174,7 +174,7 @@
 
 <footer id="footer" class="footer">
 	<div class="footer-nav">
-		<h2 class="logo"><span class="blind">Goncha</span></h2>
+		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>
