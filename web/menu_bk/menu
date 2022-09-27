@@ -185,12 +185,12 @@ $(document).ready(function(){
 	<nav id="menu" class="nav">
 		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
 		<ul class="gnb">
-			<li><a href="/web/about">Giới thiệu</a></li><!--[D] li.on  -->
+			<li><a class="navlink" href="/web/about">Giới thiệu</a></li><!--[D] li.on  -->
 			<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
-			<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
-			<li><a href="/web/menu/list">Menu</a></li>
-			<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
-			<li><a href="/web/contact/list">Liên hệ</a></li>
+			<li><a class="navlink" href="/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a class="navlink" href="/web/menu/list">Menu</a></li>
+			<li><a class="navlink" href="/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a class="navlink" href="/web/contact/list">Liên hệ</a></li>
 		</ul>
 		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
 	</nav>

@@ -90,10 +90,10 @@ function fnLink( _burl, _tergetYn){
 		<ul class="gnb">
 			<li><a class="navlink" href="/web/about">Giới thiệu</a></li>
 			<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
-			<li><a class="navlink" href="/web/tea/list">Trà của chúng tôi</a></li>
-			<li><a class="navlink" href="/web/menu/list">Menu</a></li>
-			<li><a class="navlink" href="/web/franchising/list">Cơ hội hợp tác</a></li>
-			<li><a class="navlink" href="/web/contact/list">Liên hệ</a></li>
+			<li><a class="navlink" href="/web/tea">Trà của chúng tôi</a></li>
+			<li><a class="navlink" href="/web/menu">Menu</a></li>
+			<li><a class="navlink" href="/web/franchising">Cơ hội hợp tác</a></li>
+			<li><a class="navlink" href="/web/contact">Liên hệ</a></li>
 		</ul>
 		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
 	</nav>
@@ -146,7 +146,7 @@ function fnLink( _burl, _tergetYn){
 					<p class="text-label">Trà của chúng tôi</p>
 					<h2 class="section-title medium">Những lá trà thơm, ngon<br>cao cấp đạt chuẩn</h2>
 					<p class="text">Cùng khám phá <br class="only-mo">những hương vị trà nguyên chất của chúng tôi</p>
-					<a href="/web/tea/list" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
+					<a href="/web/tea" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
 				</div>
 
 			</div>
@@ -162,13 +162,13 @@ function fnLink( _burl, _tergetYn){
 						<!-- <div class="swiper-slide slide_5 only-mo menu-mo-3"></div> -->
 						<!-- <div class="swiper-pagination"></div> -->
 						<div class="img-wrap-menu wow fadeInUp only-mo">
-							<img srcset="/assets/upload/main/20Sep2022/menu.png 750w,
-										/assets/upload/main/20Sep2022/menu.png 1024w,
-										/assets/upload/main/20Sep2022/menu.png 1920w"
+							<img srcset="/assets/upload/main/20Sep2022/menu.jpg 750w,
+										/assets/upload/main/20Sep2022/menu.jpg 1024w,
+										/assets/upload/main/20Sep2022/menu.jpg 1920w"
 								sizes="(max-width: 750px) 750px,
 										(max-width: 1024px) 1024px,
 										1240px"
-								src="/assets/upload/main/20Sep2022/menu.png" alt="Satisfaction beyond expectation"
+								src="/assets/upload/main/20Sep2022/menu.jpg" alt="Satisfaction beyond expectation"
 								class="img" />
 							<div class="main-menu justify ending">
 								<div class="text-wrap">
@@ -184,7 +184,7 @@ function fnLink( _burl, _tergetYn){
 					<!-- <a href="/web/value" class="btn normal" data-wow-delay="1200ms">Đọc Thêm<i class="ico arr"></i></a> -->
 					<!-- <p class="text-label">OUR MENU</p> -->
 					<!-- <h2 class="section-title medium">Find a Gong cha <br class="only-mo">store near you</h2> -->
-					<!-- <a class="img-wrap map" href="./menu/list"> -->
+					<!-- <a class="img-wrap map" href="./menu"> -->
 						<!-- <img src="/assets/images/menu/Menu-Dear-Tea-01.jpg" alt="world map" class="img"> -->
 <!-- 
 						<span class="map-point taiwan animated flash"><i class="ico map"></i></span>
@@ -213,7 +213,7 @@ function fnLink( _burl, _tergetYn){
 					
 					<p class="text-label-0509">CƠ HỘI HỢP TÁC</p>					
 					<h2 class="section-title medium line-title-0509">Trở thành đối tác<br> cùng Dear Tea</h2>
-					<a href="/web/franchising/list" class="btn normal">Liên Hệ Ngay<i class="ico arr"></i></a>
+					<a href="/web/franchising" class="btn normal">Liên Hệ Ngay<i class="ico arr"></i></a>
 				</div>
 			</div>
 
@@ -243,10 +243,10 @@ function fnLink( _burl, _tergetYn){
 			<ul>
 				<li><a href="/web/about">Giới thiệu</a></li>
 				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
-				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
-				<li><a href="/web/menu/list">Menu</a></li>
-				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
-				<li><a href="/web/contact/list">Liên hệ</a></li>
+				<li><a href="/web/tea">Trà của chúng tôi</a></li>
+				<li><a href="/web/menu">Menu</a></li>
+				<li><a href="/web/franchising">Cơ hội hợp tác</a></li>
+				<li><a href="/web/contact">Liên hệ</a></li>
 			</ul>
 		</div>
 	</div>
@@ -506,7 +506,7 @@ function fnLink( _burl, _tergetYn){
 			},
 			autoplay:
 			{
-				delay: 7000,//delay 변경 시, #mainGallery .swiper-pagination-bullet-active::after 애니메이션 속도 변경 필요
+				delay: 7000,//delay, #mainGallery .swiper-pagination-bullet-active::after
 				disableOnInteraction: false
 			},
 			loop: true,

@@ -186,7 +186,9 @@ body.opened-full-nav .header .btn.menu-close{position:absolute;top:60px;right:60
 .footer > div{width:100%;
 	-webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between;
 }
-.footer ul{}
+.footer span, .footer p{
+	color: #fff;
+}
 .footer-nav{font-size:.875rem;-webkit-align-items: center; -ms-flex-align: center; align-items: center;}
 .footer-nav .logo{width:95px;height:78px;background: url('../images/common/logo_h1_w.png') no-repeat 0 0;
 	-webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto;

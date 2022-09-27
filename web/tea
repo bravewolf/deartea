@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/assets/js/lib/wow.js"></script>
+<script src="/assets/js/common.js"></script>
+<link type="text/css" href="/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/assets/js/check.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">menu</a>
+    <a href="#content">content</a>
+</div>
+
+<div id="wrap" class="sub">
+	<header id="header" class="header" data-wow-duration="2s">
+		<h1><a href="/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+		<nav id="menu" class="nav">
+			<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+			<ul class="gnb">
+				<li><a class="navlink" href="/web/about">Giới thiệu</a></li><!--[D] li.on  -->
+				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
+				<li><a class="navlink" href="/web/tea">Trà của chúng tôi</a></li>
+				<li><a class="navlink" href="/web/menu">Menu</a></li>
+				<li><a class="navlink" href="/web/franchising">Cơ hội hợp tác</a></li>
+				<li><a class="navlink" href="/web/contact">Liên hệ</a></li>
+			</ul>
+			<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+		</nav>
+	</header>
+	
+	<div id="content" class="tea">
+			<div class="section head-bumper"></div>
+			<div class="section tea-header" data-header-color="defult" data-header-fix="fixed">
+				<div class="content-wrap">
+					<p class="text-label wow fadeInUp">Trà của chúng tôi</p>
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="300ms">Những lá trà thơm, <br class="only-mo">ngon <br class="only-mo">cao cấp đạt chuẩn</h2>
+				</div>
+			</div>
+			
+			
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Trà Nguyên Chất</h3>
+						<p class="text wow fadeInUp">
+							Our original teas are made with high-quality tea leaves that are brewed to perfection so you’ll want to sit and savor your selection. 
+							We choose only the best leaves and spend the perfect amount of 	time brewing our tea for the ideal taste and aroma.
+							Our signature Black tea has a rich flavor that goes perfectly with milk. 
+							Our Oolong tea is a warm and enticing option that goes well with brown sugar. 
+							Or try our aromatic Jasmine Green tea, Earl Grey tea, or Alisan tea.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/1_tra_nguyen_ban.png 750w,
+									/assets/upload/productMgmt/1_tra_nguyen_ban.png 1024w,
+									/assets/upload/productMgmt/1_tra_nguyen_ban.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/1_tra_nguyen_ban.png" alt="Original Tea"
+							class="img" />
+					</div>
+				</div>
+			
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Trà sữa</h3>
+						<p class="text wow fadeInUp">
+							Milk tea is a classic choice that provides a rich and creamy experience.
+							Our all-time favorite is the Black Milk Tea and Taro Milk Tea.
+							The Black Milk tea is robust and the Taro Milk tea is a sweet rich flavored option.
+							Or choose our smooth Jasmine Green Milk tea. Milk tea is where the fun begins.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/2_tra_sua.png 750w,
+									/assets/upload/productMgmt/2_tra_sua.png 1024w,
+									/assets/upload/productMgmt/2_tra_sua.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/2_tra_sua.png" alt="Milk Tea"
+							class="img" />
+					</div>
+				</div>
+
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Kem trứng dừa nướng</h3>
+						<p class="text wow fadeInUp">
+							Our original teas are made with high-quality tea leaves that are brewed to perfection so you’ll want to sit and savor your selection. 
+							We choose only the best leaves and spend the perfect amount of 	time brewing our tea for the ideal taste and aroma.
+							Our signature Black tea has a rich flavor that goes perfectly with milk. 
+							Our Oolong tea is a warm and enticing option that goes well with brown sugar. 
+							Or try our aromatic Jasmine Green tea, Earl Grey tea, or Alisan tea.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/3_tra_sua_nuong.png 750w,
+									/assets/upload/productMgmt/3_tra_sua_nuong.png 1024w,
+									/assets/upload/productMgmt/3_tra_sua_nuong.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/3_tra_sua_nuong.png" alt="Original Tea"
+							class="img" />
+					</div>
+				</div>
+
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Kem Cheese Béo Ngậy</h3>
+						<p class="text wow fadeInUp">
+							Milk tea is a classic choice that provides a rich and creamy experience.
+							Our all-time favorite is the Black Milk Tea and Taro Milk Tea.
+							The Black Milk tea is robust and the Taro Milk tea is a sweet rich flavored option.
+							Or choose our smooth Jasmine Green Milk tea. Milk tea is where the fun begins.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/4_tra_sua_kem_cheese.png 750w,
+									/assets/upload/productMgmt/4_tra_sua_kem_cheese.png 1024w,
+									/assets/upload/productMgmt/4_tra_sua_kem_cheese.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/4_tra_sua_kem_cheese.png" alt="Milk Tea"
+							class="img" />
+					</div>
+				</div>
+
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Trân Châu Đường Đen</h3>
+						<p class="text wow fadeInUp">
+							Our original teas are made with high-quality tea leaves that are brewed to perfection so you’ll want to sit and savor your selection. 
+							We choose only the best leaves and spend the perfect amount of 	time brewing our tea for the ideal taste and aroma.
+							Our signature Black tea has a rich flavor that goes perfectly with milk. 
+							Our Oolong tea is a warm and enticing option that goes well with brown sugar. 
+							Or try our aromatic Jasmine Green tea, Earl Grey tea, or Alisan tea.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/5_tra_sua_tran_chau_duong_den.png 750w,
+									/assets/upload/productMgmt/5_tra_sua_tran_chau_duong_den.png 1024w,
+									/assets/upload/productMgmt/5_tra_sua_tran_chau_duong_den.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/5_tra_sua_tran_chau_duong_den.png" alt="Original Tea"
+							class="img" />
+					</div>
+				</div>
+
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Đá xay Iceblend</h3>
+						<p class="text wow fadeInUp">
+							Milk tea is a classic choice that provides a rich and creamy experience.
+							Our all-time favorite is the Black Milk Tea and Taro Milk Tea.
+							The Black Milk tea is robust and the Taro Milk tea is a sweet rich flavored option.
+							Or choose our smooth Jasmine Green Milk tea. Milk tea is where the fun begins.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/6_ice_blend.png 750w,
+									/assets/upload/productMgmt/6_ice_blend.png 1024w,
+									/assets/upload/productMgmt/6_ice_blend.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/6_ice_blend.png" alt="Milk Tea"
+							class="img" />
+					</div>
+				</div>
+
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Trà Hoa Quả</h3>
+						<p class="text wow fadeInUp">
+							Our original teas are made with high-quality tea leaves that are brewed to perfection so you’ll want to sit and savor your selection. 
+							We choose only the best leaves and spend the perfect amount of 	time brewing our tea for the ideal taste and aroma.
+							Our signature Black tea has a rich flavor that goes perfectly with milk. 
+							Our Oolong tea is a warm and enticing option that goes well with brown sugar. 
+							Or try our aromatic Jasmine Green tea, Earl Grey tea, or Alisan tea.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/7_tra_hoa_qua.png 750w,
+									/assets/upload/productMgmt/7_tra_hoa_qua.png 1024w,
+									/assets/upload/productMgmt/7_tra_hoa_qua.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/7_tra_hoa_qua.png" alt="Original Tea"
+							class="img" />
+					</div>
+				</div>
+			
+				<div class="section item justify" data-header-color="defult">
+					<div class="text-wrap">
+						<h3 class="title wow fadeInUp">Toppings</h3>
+						<p class="text wow fadeInUp">
+							Top off your drink with a delicious topping.
+Choose from our signature sweet and salty milk foam, cheese foam, chewy  pearls, coconut, aloe, or one of our many other tasty toppings to complete the  experience.
+						</p>
+					</div>
+					<div class="img-wrap wow fadeInUp">
+						<img srcset="/assets/upload/productMgmt/8_topping.png 750w,
+									/assets/upload/productMgmt/8_topping.png 1024w,
+									/assets/upload/productMgmt/8_topping.png 1025w"
+							sizes="(max-width: 750px) 750px,
+									(max-width: 1024px) 1024px,
+									1025px"
+							src="/assets/upload/productMgmt/8_topping.png" alt="Toppings"
+							class="img" />
+					</div>
+				</div>
+			
+			
+			<div class="section item justify ending" data-header-color="dark">
+				<div class="text-wrap">
+					<p class="title wow fadeInUp">
+						<!--
+							20210114 수정사항 요청
+							https://docs.google.com/presentation/d/14cN3OtqrHIyZadjMN_OpV1ApKq9HFEcrg14ziBYZXIY/edit#slide=id.gb534700136_0_28
+							P4 문구 변경
+						 -->
+						<span class="quote open"></span> Tại Dear Tea, chúng mình bỏ rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
+				</div>
+			</div>
+		</div>
+		
+	
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2><span style="font-size:x-large">Deartea</span></h2>
+		<div>
+			<ul>
+				<li><a href="/web/about">Giới thiệu</a></li>
+				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
+				<li><a href="/web/tea">Trà của chúng tôi</a></li>
+				<li><a href="/web/menu">Menu</a></li>
+				<li><a href="/web/franchising">Cơ hội hợp tác</a></li>
+				<li><a href="/web/contact">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+</div>
+<script>
+		$(function(){
+			//modal
+			$('.item.tea').on('click',function() {
+				if ($('body').hasClass('is-mobile')){
+					openModalTea(this);
+				} else {
+					$(this).addClass('active');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

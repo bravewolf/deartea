@@ -1,0 +1,513 @@
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Tea - Trà sữa thực - hương vị thực</title>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/assets/js/lib/wow.js"></script>
+<script src="/assets/js/common.js"></script>
+<link type="text/css" href="/assets/css/g_goncha.css" rel="stylesheet" />
+<script type="text/javascript" src="/assets/js/check.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.form.min.js" charset="utf-8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
+
+<script type="text/javascript">
+// <![CDATA[  
+    function fnProc() {
+		var frm = $("form[name=updateForm]");
+		
+		
+		if( frm.find('input[name=name]').val() == false || frm.find('input[name=name]').val() == "" ){
+		    	alert('Name field is required.');
+		    	frm.find('input[name=name]').focus();
+		    	return;
+		    }
+		if( frm.find('input[name=email]').val() == false || frm.find('input[name=email]').val() == "" ){
+		    	alert('Email field is required.');
+		    	frm.find('input[name=email]').focus();
+		    	return;
+		    }
+		if( frm.find('select[name=countryItst]').val() == false || frm.find('select[name=countryItst]').val() == "" ){
+		    	alert('Country of Interest field is required.');
+		    	frm.find('select[name=countryItst]').focus();
+		    	return;
+		    }
+		if( frm.find('input[name=location]').val() == false || frm.find('input[name=location]').val() == "" ){
+	    	alert('Store Location field is required.');
+	    	frm.find('input[name=location]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=model]').val() == false || frm.find('select[name=model]').val() == "" ){
+	    	alert('Business Model field is required.');
+	    	frm.find('select[name=model]').focus();
+	    	return;
+	    }
+		if( frm.find('input[name=usd]').val() == false || frm.find('input[name=usd]').val() == "" ){
+	    	alert('Estiated Investment (USD) field is required.');
+	    	frm.find('input[name=usd]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=year]').val() == false || frm.find('select[name=year]').val() == "" ){
+	    	alert('Year field is required.');
+	    	frm.find('select[name=year]').focus();
+	    	return;
+	    }
+		if( frm.find('select[name=month]').val() == false || frm.find('select[name=month]').val() == "" ){
+	    	alert('Month field is required.');
+	    	frm.find('select[name=month]').focus();
+	    	return;
+	    }
+		
+		if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
+		    	alert('Message field is required.');
+		    	frm.find('textarea[name=message]').focus();
+		    	return;
+		    }
+		if( !$("input:checkbox[id='agree']").is(":checked") == true){
+	    	alert('Please check the personal information collection consent information.');
+	    	$('#agree').focus();
+	    	return;
+	    }
+
+	// add date time before submit form
+		var datestr = new Date().toLocaleString();
+		frm.find('input[name=datetime]').val(datestr);	
+
+	 // ajaxSubmit 통신 후 처리 작업
+		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
+		 	if (statusText == "success") {
+				if (objResponse["result"] == 'S' || objResponse["result"] == 'success') {
+					alert("Thank you for submitting");
+					location.reload();
+				} else {
+					alert("An error occurred during data transmission.");
+				}
+			} else {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		var options = {
+			url : "https://script.google.com/macros/s/AKfycbykXpmXgZwGHLHV85A6sVWJFCo3c9I81LiUyz3za4b9nlmiIyao_XAgIEMWWQvoy48x7A/exec",
+			type : "post",
+			dataType : 'json',
+			contentType: false,
+	        processData: false,
+			success : fnApplyCallback,
+			beforeSend: function() {
+				$('.wrap-loading').removeClass('display-none');
+			}, 
+			complete:function(){
+		        $('.wrap-loading').addClass('display-none');
+		    },
+			error : function(data, result, resultMsg) {
+				alert("An error occurred during data transmission.");
+			}
+		};
+		
+		frm.ajaxSubmit(options);
+	}
+	// ]]>
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+<div class="skip-nav">
+    <a href="#menu">메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+</div>
+
+<div id="wrap" class="sub">
+	<header id="header" class="header" data-wow-duration="2s">
+	<h1><a href="/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+	<nav id="menu" class="nav">
+		<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
+		<ul class="gnb">
+			<li><a class="navlink" href="/web/about">Giới thiệu</a></li><!--[D] li.on  -->
+			<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
+			<li><a class="navlink" href="/web/tea/list">Trà của chúng tôi</a></li>
+			<li><a class="navlink" href="/web/menu/list">Menu</a></li>
+			<li><a class="navlink" href="/web/franchising/list">Cơ hội hợp tác</a></li>
+			<li><a class="navlink" href="/web/contact/list">Liên hệ</a></li>
+		</ul>
+		<button type="button" class="btn menu-close"><span class="blind">close</span></button>
+	</nav>
+</header>
+	
+<div id="content" class="form franchise">
+			<div class="section head-bumper"></div>
+			<div class="section form-header" data-header-color="defult" data-header-fix="fixed">
+				<div class="content-wrap">
+					<p class="text-label wow fadeInUp">CƠ HỘI HỢP TÁC</p>
+					<h2 class="section-title medium wow fadeInUp" data-wow-delay="300ms">Trở thành đối tác<br class="only-mo"> cùng Dear Tea</h2>
+				</div>
+			</div>
+			<form name="updateForm" id="updateForm" method="post" onsubmit="return false" enctype="multipart/form-data" class="section form" data-header-color="defult">
+				<input type="hidden" name="subject" value="FRANCHISING OPPORTUNITIES">
+				<fieldset class="section wow fadeInUp" data-wow-delay="600ms">
+					<legend class="blind">partner form</legend>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="name" id="name" data-null="not" title="Name" />
+						<label class="label" for="name">Tên của bạn <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" />
+						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+					</div>
+					<div style="display: none;">
+						<input type="text" class="input-text" name="datetime" id="datetime" data-null="not"/>
+					</div>
+					<!-- <div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="compNm" id="compNm" title="Company Name" />
+						<label class="label" for="company">Tên tổ chức (Nếu có)</label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="comp/Web" id="comp/Web" title="Company /Website" />
+						<label class="label" for="/website">Website (Nếu có)</label>
+					</div> -->
+					<div class="field wow fadeInUp">
+							<select class="select" name="countryItst" id="countryItst" data-null="not" title="select Country">
+								<option value="" >Tỉnh/thành phố</option>
+								
+								<option value="Hà Nội">Hà Nội</option>
+								
+								<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+																
+								<option value="Đà Nẵng">Đà Nẵng</option>
+																
+								<option value="Hải Phòng">Hải Phòng</option>
+																
+								<option value="Cần Thơ">Cần Thơ</option>
+																
+								<option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+																
+								<option value="An Giang">An Giang</option>
+																
+								<option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+																
+								<option value="Bạc Liêu">Bạc Liêu</option>
+																
+								<option value="Bắc Giang">Bắc Giang</option>
+																
+								<option value="Bắc Kạn">Bắc Kạn</option>
+																
+								<option value="Bắc Ninh">Bắc Ninh</option>
+																
+								<option value="Bến Tre">Bến Tre</option>
+																
+								<option value="Bình Dương">Bình Dương</option>
+																
+								<option value="Bình Định">Bình Định</option>
+																
+								<option value="Bình Phước">Bình Phước</option>
+																
+								<option value="Bình Thuận">Bình Thuận</option>
+																
+								<option value="Cà Mau">Cà Mau</option>
+																
+								<option value="Cao Bằng">Cao Bằng</option>
+																
+								<option value="Đắk Lắk">Đắk Lắk</option>
+																
+								<option value="Đắk Nông">Đắk Nông</option>
+																
+								<option value="Điện Biên">Điện Biên</option>
+																
+								<option value="Đồng Nai">Đồng Nai</option>
+																
+								<option value="Đồng Tháp">Đồng Tháp</option>
+																
+								<option value="Gia Lai">Gia Lai</option>
+																
+								<option value="Hà Giang">Hà Giang</option>
+																
+								<option value="Hà Nam">Hà Nam</option>
+																
+								<option value="Hà Tĩnh">Hà Tĩnh</option>
+																
+								<option value="Hải Dương">Hải Dương</option>
+																
+								<option value="Hậu Giang">Hậu Giang</option>
+																
+								<option value="Hòa Bình">Hòa Bình</option>
+																
+								<option value="Hưng Yên">Hưng Yên</option>
+																
+								<option value="Khánh Hòa">Khánh Hòa</option>
+																
+								<option value="Kiên Giang">Kiên Giang</option>
+																
+								<option value="Kon Tum">Kon Tum</option>
+																
+								<option value="Lai Châu">Lai Châu</option>
+																
+								<option value="Lạng Sơn">Lạng Sơn</option>
+																
+								<option value="Lào Cai">Lào Cai</option>
+																
+								<option value="Lâm Đồng">Lâm Đồng</option>
+																
+								<option value="Long An">Long An</option>
+																
+								<option value="Nam Định">Nam Định</option>
+																
+								<option value="Nghệ An">Nghệ An</option>
+																
+								<option value="Ninh Bình">Ninh Bình</option>
+																
+								<option value="Ninh Thuận">Ninh Thuận</option>
+																
+								<option value="Phú Thọ">Phú Thọ</option>
+																
+								<option value="Phú Yên">Phú Yên</option>
+																
+								<option value="Quảng Bình">Quảng Bình</option>
+																
+								<option value="Quảng Nam">Quảng Nam</option>
+																
+								<option value="Quảng Ngãi">Quảng Ngãi</option>
+																
+								<option value="Quảng Ninh">Quảng Ninh</option>
+																
+								<option value="Quảng Trị">Quảng Trị</option>
+																
+								<option value="Sóc Trăng">Sóc Trăng</option>
+																
+								<option value="Sơn La">Sơn La</option>
+																
+								<option value="Tây Ninh">Tây Ninh</option>
+																
+								<option value="Thái Bình">Thái Bình</option>
+																
+								<option value="Thái Nguyên">Thái Nguyên</option>
+																
+								<option value="Thanh Hóa">Thanh Hóa</option>
+																
+								<option value="Tiền Giang">Tiền Giang</option>
+																
+								<option value="Trà Vinh">Trà Vinh</option>
+																
+								<option value="Tuyên Quang">Tuyên Quang</option>
+																
+								<option value="Vĩnh Long">Vĩnh Long</option>
+																
+								<option value="Vĩnh Phúc">Vĩnh Phúc</option>
+																
+								<option value="Yên Bái">Yên Bái</option>
+								
+							</select>
+						<label class="label" for="country">Tỉnh/thành phố <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp">
+						<input type="text" class="input-text" name="location" id="location" data-null="not" title="Store Location"/>
+						<label class="label" for="location">Vị trí mở quán  <span class="require">*</span></label>
+					</div>
+					<div class="wow fadeInUp">
+						<span class="subSpan2">Địa chỉ chi tiết nhất có thể</span>
+					</div>
+
+					<!-- <div class="field wow fadeInUp">
+							<select class="select" name="model" id="model" data-null="not" title="select Business Model">
+								<option value="" >Business Model</option>
+								<option value="Area Master Franchise">Area Master Franchisee</option>
+								<option value="One Store Franchise">One Store Franchisee</option>
+							</select>
+						<label class="label" for="model">Business Model <span class="require">*</span></label>
+					</div>
+					 -->
+					<div class="field wow fadeInUp flexC">
+						<span class="subSpan2">VD: 200 triệu</span>
+						<input type="text" class="input-text" name="usd" id="usd" data-null="not" title="Estiated Investment (USD)" />
+						<label class="label" for="usd">Vốn dự kiến (VNĐ) <span class="require">*</span></label>
+					</div>
+					<div class="field wow fadeInUp flexC">
+						<span class="subSpan2">VD: Tháng 8, 2025</span>
+						<div class="selectWrap">
+							<select class="select" name="year" id="year" data-null="not" title="select Year">
+								<option value="" >Năm</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>
+								<option value="2024">2024</option>
+								<option value="2025">2025</option>
+								<option value="2026">2026</option>
+								<option value="2027">2027</option>
+								<option value="2028">2028</option>
+								<option value="2029">2029</option>
+								<option value="2030">2030</option>
+								<option value="2031">2031</option>
+								<option value="2032">2032</option>
+							</select>
+
+							<select class="select" name="month" id="month" data-null="not" title="select Month">
+								<option value="" selected>Tháng</option>
+								<option value="January">Tháng 1</option>
+								<option value="Feburary">Tháng 2</option>
+								<option value="March">Tháng 3</option>
+								<option value="April">Tháng 4</option>
+								<option value="May">Tháng 5</option>
+								<option value="June">Tháng 6</option>
+								<option value="July">Tháng 7</option>
+								<option value="August">Tháng 8</option>
+								<option value="September">Tháng 9</option>
+								<option value="October">Tháng 10</option>
+								<option value="November">Tháng 11</option>
+								<option value="December">Tháng 12</option>
+							</select>
+						</div>
+						<label class="label" for="month">Thời điểm dự kiến khai trương <span class="require">*</span></label>
+					</div>
+					<!-- <div class="field wow fadeInUp flexC">
+						<input type="text" class="input-text" name="applicable" id="applicable" title="Name Of the company that you represent" />
+						<label class="label" for="applicable"><span class="subSpan">Name of the company that you represent, if applicable</span></label>
+					</div> -->
+					<div class="field wow fadeInUp flexC"><!--2021-05-21::class추가/'large'삭제-->
+						<textarea class="textarea" type="text" name="message" id="message" data-null="not" title="message" rows="5" cols="50"> </textarea>
+						<label class="label" for="message">Lời nhắn </label>
+					</div>
+					<div class="field agree large wow fadeInUp">
+						<p>
+							Thông tin của bạn<br class="only-tb"> sẽ được lưu lại nhé.
+						</p>
+						<label>
+							<input type="checkbox" name="agree" id="agree">
+							<span>Đồng ý</span>
+						</label>
+					</div>
+					<div class="button-area wow fadeInUp">
+						<button type="submit" class="btn normal" onclick="javascript:fnProc(); return false;">Gửi Dear Tea<i class="ico arr"></i></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+		
+	<div class="wrap-loading display-none">
+    	<div><img src="/assets/images/common/loading.gif" /></div>
+	</div>
+		
+	
+
+
+
+
+
+
+
+
+
+  
+ 
+
+ 
+
+
+
+
+<footer id="footer" class="footer">
+	<div class="footer-nav">
+		<h2><span style="font-size:x-large">Deartea</span></h2>
+		<div>
+			<ul>
+				<li><a href="/web/about">Giới thiệu</a></li>
+				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
+				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a href="/web/menu/list">Menu</a></li>
+				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a href="/web/contact/list">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>
+			Ⓡ 2022 Dear Tea - All Rights Reserved<br>
+			Sảnh S2.17, Vinhomes Ocean Park, Đa Tốn, Gia Lâm, Hà Nội<br>
+			Contact email : <a href="mailto:deartea.vn@gmail.com">deartea.vn@gmail.com</a><br>
+			Hotline 0975.666.874<br>
+			Chúng tôi trân trọng những giây phút bạn trao tặng<br>
+		</p>
+	</div>
+</footer>
+</div>
+<script>
+		$(function(){
+
+		});
+</script>
+
+<style type="text/css" >
+	.wrap-loading{ /*화면 전체를 어둡게 합니다.*/
+	    position: fixed;
+	    left:0;
+	    right:0;
+	    top:0;
+	    bottom:0;
+	    background: rgba(0,0,0,0.2); /*not in ie */
+	    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#20000000', endColorstr='#20000000');    /* ie */
+	}
+    .wrap-loading div{ /*로딩 이미지*/
+        position: fixed;
+        top:50%;
+        left:50%;
+        margin-left: -21px;
+        margin-top: -21px;
+    }
+    .display-none{ /*감추기*/
+        display:none;
+    }
+</style>
+
+</body>
+</html>

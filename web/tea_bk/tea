@@ -314,12 +314,12 @@ Choose from our signature sweet and salty milk foam, cheese foam, chewy  pearls,
 		<h2><span style="font-size:x-large">Deartea</span></h2>
 		<div>
 			<ul>
-				<li><a href="/web/about">Giới thiệu</a></li>
+				<li><a class="navlink" href="/web/about">Giới thiệu</a></li>
 				<!-- <li><a href="/web/value">Sứ mệnh</a></li> -->
-				<li><a href="/web/tea/list">Trà của chúng tôi</a></li>
-				<li><a href="/web/menu/list">Menu</a></li>
-				<li><a href="/web/franchising/list">Cơ hội hợp tác</a></li>
-				<li><a href="/web/contact/list">Liên hệ</a></li>
+				<li><a class="navlink" href="/web/tea/list">Trà của chúng tôi</a></li>
+				<li><a class="navlink" href="/web/menu/list">Menu</a></li>
+				<li><a class="navlink" href="/web/franchising/list">Cơ hội hợp tác</a></li>
+				<li><a class="navlink" href="/web/contact/list">Liên hệ</a></li>
 			</ul>
 		</div>
 	</div>
