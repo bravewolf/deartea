@@ -54,27 +54,27 @@
 		var frm = $("form[name=updateForm]");
 		
 		if( frm.find('input[name=name]').val() == false || frm.find('input[name=name]').val() == "" ){
-		    	alert('Name field is required.');
+		    	alert('Vui lòng điền tên của bạn.');
 		    	frm.find('input[name=name]').focus();
 		    	return;
 		    }
-		if( frm.find('input[name=email]').val() == false || frm.find('input[name=email]').val() == "" ){
-		    	alert('Email field is required.');
-		    	frm.find('input[name=email]').focus();
+		if( frm.find('input[name=phonenumber]').val() == false || frm.find('input[name=phonenumber]').val() == "" ){
+		    	alert('Vui lòng điền số điện thoại.');
+		    	frm.find('input[name=phonenumber]').focus();
 		    	return;
 		    }
 		if( frm.find('select[name=subject]').val() == false || frm.find('select[name=subject]').val() == "" ){
-		    	alert('Subject field is required.');
+		    	alert('Vui lòng chọn loại vấn đề cần phản hồi.');
 		    	frm.find('select[name=subject]').focus();
 		    	return;
 		    }
 		if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
-		    	alert('Message field is required.');
+		    	alert('Vui lòng điền lời nhắn.');
 		    	frm.find('textarea[name=message]').focus();
 		    	return;
 		    }
 		if( !$("input:checkbox[id='agree']").is(":checked") == true){
-	    	alert('Please check the personal information collection consent information.');
+	    	alert('Bạn chưa chọn đồng ý gửi thông tin.');
 	    	$('#agree').focus();
 	    	return;
 	    }
@@ -87,13 +87,13 @@
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
 			if (statusText == "success") {
 				if (objResponse["result"] == 'S' || objResponse["result"] == 'success') {
-					alert("Thank you for submitting");
+					alert("Cảm ơn nhé, lời nhắn của bạn đã được ghi nhận <3");
 					location.reload();
 				} else {
-					alert("An error occurred during data transmission.");
+					alert("Có lỗi xảy ra, không thể gửi lời nhắn.");
 				}
 			} else {
-				alert("An error occurred during data transmission.");
+				alert("Có lỗi xảy ra, không thể gửi lời nhắn.");
 			}
 		};
 
@@ -111,7 +111,7 @@
 		        $('.wrap-loading').addClass('display-none');
 		    },
 			error : function(data, result, resultMsg) {
-				alert("An error occurred during data transmission.");
+				alert("Có lỗi xảy ra, không thể gửi lời nhắn.");
 			}
 		};
 		
@@ -177,8 +177,8 @@
 						<label class="label" for="name">Tên của bạn<span class="require">*</span></label>
 					</div>
 					<div class="field wow fadeInUp">
-						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" required />
-						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+						<input type="text" class="input-text" name="phonenumber" id="phonenumber" data-null="not" title="Phonenumber" required />
+						<label class="label" for="phonenumber">Số điện thoại <span class="require">*</span></label>
 						<!--<p class="msg">This field is required.</p>-->
 					</div>
 					<div style="display: none;">

@@ -55,53 +55,53 @@
 		
 		
 		if( frm.find('input[name=name]').val() == false || frm.find('input[name=name]').val() == "" ){
-		    	alert('Name field is required.');
+		    	alert('Vui lòng điền tên của bạn.');
 		    	frm.find('input[name=name]').focus();
 		    	return;
 		    }
-		if( frm.find('input[name=email]').val() == false || frm.find('input[name=email]').val() == "" ){
-		    	alert('Email field is required.');
-		    	frm.find('input[name=email]').focus();
+		if( frm.find('input[name=phonenumber]').val() == false || frm.find('input[name=phonenumber]').val() == "" ){
+		    	alert('Vui lòng điền số điện thoại.');
+		    	frm.find('input[name=phonenumber]').focus();
 		    	return;
 		    }
 		if( frm.find('select[name=countryItst]').val() == false || frm.find('select[name=countryItst]').val() == "" ){
-		    	alert('Country of Interest field is required.');
+		    	alert('Vui lòng chọn tỉnh/thành phố.');
 		    	frm.find('select[name=countryItst]').focus();
 		    	return;
 		    }
 		if( frm.find('input[name=location]').val() == false || frm.find('input[name=location]').val() == "" ){
-	    	alert('Store Location field is required.');
+	    	alert('Vui lòng điền địa chỉ chi tiết.');
 	    	frm.find('input[name=location]').focus();
 	    	return;
 	    }
-		if( frm.find('select[name=model]').val() == false || frm.find('select[name=model]').val() == "" ){
-	    	alert('Business Model field is required.');
-	    	frm.find('select[name=model]').focus();
-	    	return;
-	    }
+		// if( frm.find('select[name=model]').val() == false || frm.find('select[name=model]').val() == "" ){
+	    // 	alert('Business Model field is required.');
+	    // 	frm.find('select[name=model]').focus();
+	    // 	return;
+	    // }
 		if( frm.find('input[name=usd]').val() == false || frm.find('input[name=usd]').val() == "" ){
-	    	alert('Estiated Investment (USD) field is required.');
+	    	alert('Vui lòng điền số vốn dự kiến.');
 	    	frm.find('input[name=usd]').focus();
 	    	return;
 	    }
 		if( frm.find('select[name=year]').val() == false || frm.find('select[name=year]').val() == "" ){
-	    	alert('Year field is required.');
+	    	alert('Vui lòng chọn năm dự kiến khai trương.');
 	    	frm.find('select[name=year]').focus();
 	    	return;
 	    }
 		if( frm.find('select[name=month]').val() == false || frm.find('select[name=month]').val() == "" ){
-	    	alert('Month field is required.');
+	    	alert('Vui lòng chọn tháng dự kiến khai trương.');
 	    	frm.find('select[name=month]').focus();
 	    	return;
 	    }
 		
-		if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
-		    	alert('Message field is required.');
-		    	frm.find('textarea[name=message]').focus();
-		    	return;
-		    }
+		// if( frm.find('textarea[name=message]').val() == false || frm.find('textarea[name=message]').val() == "" ){
+		//     	alert('Message field is required.');
+		//     	frm.find('textarea[name=message]').focus();
+		//     	return;
+		//     }
 		if( !$("input:checkbox[id='agree']").is(":checked") == true){
-	    	alert('Please check the personal information collection consent information.');
+	    	alert('Bạn chưa chọn đồng ý gửi thông tin.');
 	    	$('#agree').focus();
 	    	return;
 	    }
@@ -114,13 +114,13 @@
 		var fnApplyCallback = function(objResponse, statusText, xhr, $from) {
 		 	if (statusText == "success") {
 				if (objResponse["result"] == 'S' || objResponse["result"] == 'success') {
-					alert("Thank you for submitting");
+					alert("Chúng tôi sẽ liên lạc với bạn sớm nhất có thể");
 					location.reload();
 				} else {
-					alert("An error occurred during data transmission.");
+					alert("Có lỗi xảy ra, vui lòng thử lại.");
 				}
 			} else {
-				alert("An error occurred during data transmission.");
+				alert("Có lỗi xảy ra, vui lòng thử lại.");
 			}
 		};
 		
@@ -138,7 +138,7 @@
 		        $('.wrap-loading').addClass('display-none');
 		    },
 			error : function(data, result, resultMsg) {
-				alert("An error occurred during data transmission.");
+				alert("Có lỗi xảy ra, vui lòng thử lại.");
 			}
 		};
 		
@@ -204,20 +204,13 @@
 						<label class="label" for="name">Tên của bạn <span class="require">*</span></label>
 					</div>
 					<div class="field wow fadeInUp">
-						<input type="text" class="input-text" name="email" id="email" data-null="not" title="Email" />
-						<label class="label" for="email">Số điện thoại <span class="require">*</span></label>
+						<input type="text" class="input-text" name="phonenumber" id="phonenumber" data-null="not" title="Phonenumber" />
+						<label class="label" for="phonenumber">Số điện thoại <span class="require">*</span></label>
 					</div>
 					<div style="display: none;">
 						<input type="text" class="input-text" name="datetime" id="datetime" data-null="not"/>
 					</div>
-					<!-- <div class="field wow fadeInUp">
-						<input type="text" class="input-text" name="compNm" id="compNm" title="Company Name" />
-						<label class="label" for="company">Tên tổ chức (Nếu có)</label>
-					</div>
-					<div class="field wow fadeInUp">
-						<input type="text" class="input-text" name="comp/Web" id="comp/Web" title="Company /Website" />
-						<label class="label" for="/website">Website (Nếu có)</label>
-					</div> -->
+
 					<div class="field wow fadeInUp">
 							<select class="select" name="countryItst" id="countryItst" data-null="not" title="select Country">
 								<option value="" >Tỉnh/thành phố</option>
@@ -359,15 +352,7 @@
 						<span class="subSpan2">Địa chỉ chi tiết nhất có thể</span>
 					</div>
 
-					<!-- <div class="field wow fadeInUp">
-							<select class="select" name="model" id="model" data-null="not" title="select Business Model">
-								<option value="" >Business Model</option>
-								<option value="Area Master Franchise">Area Master Franchisee</option>
-								<option value="One Store Franchise">One Store Franchisee</option>
-							</select>
-						<label class="label" for="model">Business Model <span class="require">*</span></label>
-					</div>
-					 -->
+
 					<div class="field wow fadeInUp flexC">
 						<span class="subSpan2">VD: 200 triệu</span>
 						<input type="text" class="input-text" name="usd" id="usd" data-null="not" title="Estiated Investment (USD)" />
@@ -409,13 +394,10 @@
 						</div>
 						<label class="label" for="month">Thời điểm dự kiến khai trương <span class="require">*</span></label>
 					</div>
-					<!-- <div class="field wow fadeInUp flexC">
-						<input type="text" class="input-text" name="applicable" id="applicable" title="Name Of the company that you represent" />
-						<label class="label" for="applicable"><span class="subSpan">Name of the company that you represent, if applicable</span></label>
-					</div> -->
+
 					<div class="field wow fadeInUp flexC"><!--2021-05-21::class추가/'large'삭제-->
 						<textarea class="textarea" type="text" name="message" id="message" data-null="not" title="message" rows="5" cols="50"> </textarea>
-						<label class="label" for="message">Lời nhắn </label>
+						<label class="label" for="message">Lời nhắn (nếu có) </label>
 					</div>
 					<div class="field agree large wow fadeInUp">
 						<p>
