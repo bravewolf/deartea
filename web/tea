@@ -39,6 +39,7 @@
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="telephone=no" name="format-detection" />
+<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <script src="/assets/js/jquery-2.2.4.min.js"></script>
 <script src="/assets/js/lib/wow.js"></script>
@@ -274,12 +275,7 @@
 			<div class="section item justify ending" data-header-color="dark">
 				<div class="text-wrap">
 					<p class="title wow fadeInUp">
-						<!--
-							20210114 수정사항 요청
-							https://docs.google.com/presentation/d/14cN3OtqrHIyZadjMN_OpV1ApKq9HFEcrg14ziBYZXIY/edit#slide=id.gb534700136_0_28
-							P4 문구 변경
-						 -->
-						<span class="quote open"></span> Tại Dear Tea, chúng mình bỏ rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
+						<span class="quote open"></span> Tại Dear Tea, chúng mình dành rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
 				</div>
 			</div>
 		</div>

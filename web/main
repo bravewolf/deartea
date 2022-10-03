@@ -40,8 +40,8 @@
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="telephone=no" name="format-detection" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes">
 <script src="/assets/js/jquery-2.2.4.min.js"></script>
 <script src="/assets/js/lib/wow.js"></script>
 <script src="/assets/js/common.js"></script>
@@ -50,6 +50,7 @@
 <script type="text/javascript" src="/assets/js/jquery.form.min.js" charset="utf-8"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 function fnLink( _burl, _tergetYn){
@@ -130,7 +131,7 @@ function fnLink( _burl, _tergetYn){
 									<div class="content-wrap only-pc">
 										<a href="#" onclick="javascript:fnLink('/web/about', 'N'); return false;" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
 										<p class="text-about"><br>Dear Tea ra đời với khát vọng chia sẻ tới khách hàng những ly trà sữa tự nhiên và cao cấp.
-											<br class="only-mo"> <br class="only-pc">Những lá trà, nguyên liệu, hoa quả thơm ngon nhất được chúng tôi tuyển chọn kỹ càng, 
+											<br class="only-mo"> <br class="only-pc">Những lá trà, nguyên liệu, hoa quả thơm ngon nhất được chúng mình tuyển chọn kỹ càng, 
 											<br class="only-pc">trải qua quy trình chế biến nghiêm ngặt. <br class="only-tb"><br class="only-mo">
 											Chúng mình rất vui khi thấy mọi người ở mọi lứa tuổi, hoàn cảnh khác nhau <br class="only-pc">
 											đến Dear Tea để tán gẫu, học tập và làm việc.<br>Từng cốc trà của Dear Tea giống như món quà mang đến niềm vui và cảm hứng mỗi ngày.</p>
@@ -138,7 +139,7 @@ function fnLink( _burl, _tergetYn){
 									<div class="content-wrap only-tb">
 										<a href="#" onclick="javascript:fnLink('/web/about', 'N'); return false;" class="btn normal">Đọc Thêm<i class="ico arr"></i></a>
 										<p class="text-about"><br>Dear Tea ra đời với khát vọng chia sẻ tới khách hàng những ly trà sữa tự nhiên và cao cấp.
-											<br>Những lá trà, nguyên liệu, hoa quả thơm ngon nhất được chúng tôi tuyển chọn kỹ càng, 
+											<br>Những lá trà, nguyên liệu, hoa quả thơm ngon nhất được chúng mình tuyển chọn kỹ càng, 
 											<br>trải qua quy trình chế biến nghiêm ngặt.
 											Chúng mình rất vui khi thấy mọi người ở mọi lứa tuổi, hoàn cảnh khác nhau
 											đến Dear Tea để tán gẫu, học tập và làm việc.<br>Từng cốc trà của Dear Tea giống như món quà mang đến niềm vui và cảm hứng mỗi ngày.</p>
@@ -186,55 +187,27 @@ function fnLink( _burl, _tergetYn){
 			<div id="secStore" class="section store">
 				<div class="content-wrap">
 					<h2 class="section-title medium" data-wow-delay="400ms" style="margin-bottom: 0px;">Menu<br class="only-mo"></h2>
-					<div class="swiper-wrapper menu-wrapper">
-						<div class="swiper-slide slide_1 bg-area only-pc"></div>
-						<div class="swiper-slide slide_2 bg-area only-tb"></div>
-						<!-- <div class="swiper-slide slide_3 only-mo menu-mo-1"></div> -->
-						<!-- <div class="swiper-slide slide_4 only-mo menu-mo-2"></div> -->
-						<!-- <div class="swiper-slide slide_5 only-mo menu-mo-3"></div> -->
-						<!-- <div class="swiper-pagination"></div> -->
-						<!-- <div class="img-wrap-menu img-fluid wow fadeInUp only-mo">
-							<img srcset="/assets/upload/main/20Sep2022/menu.jpg 750w,
-										/assets/upload/main/20Sep2022/menu.jpg 1024w,
-										/assets/upload/main/20Sep2022/menu.jpg 1920w"
-								sizes="(max-width: 750px) 750px,
-										(max-width: 1024px) 1024px,
-										1240px"
-								src="/assets/upload/main/20Sep2022/menu.jpg" alt="Satisfaction beyond expectation"
-								class="img" />
-							<div class="main-menu justify ending">
-								<div class="text-wrap">
-									<p class="title wow fadeInUp">
-										<span class="quote open"></span> Tại Dear Tea, chúng mình bỏ rất nhiều công sức để tìm ra những công thức đồ uống mát lạnh, đậm đà nhất. Hãy tận hưởng thật sảng khoái nhé <br class="only-mo"><span class="quote close"></span></p>
-								</div>
-							</div>
-						</div> -->
+					<div class="menu-wrapper">
+						<div class="bg-area only-pc"></div>
+						<div class="bg-area only-tb"></div>
 						<div class="only-mo">
 							<div id="carouselMenu" class="carousel slide" data-bs-ride="carousel">
-								<div class="carousel-indicators">
-									<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="0" class="active" aria-current="true"></button>
-									<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="1"></button>
-									<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="2"></button>
-								</div>
-								<div class="carousel-inner" style="	bottom: 75px;" >
+								<div class="carousel-inner" style="	bottom: 10%;" >
 									<div class="carousel-item active">
-										<img src="/assets/upload/main/20Sep2022/menu_1.jpg" class="w-100 mh-100" alt="...">
+										<img src="/assets/upload/main/20Sep2022/menu_1.jpg" class="d-block w-100 mh-100" alt="...">
 									</div>
 									<div class="carousel-item">
-										<img src="/assets/upload/main/20Sep2022/menu_2.jpg" class="w-100 mh-100" alt="...">
+										<img src="/assets/upload/main/20Sep2022/menu_2.jpg" class="d-block w-100 mh-100" alt="...">
 									</div>
 									<div class="carousel-item">
-										<img src="/assets/upload/main/20Sep2022/menu_3.jpg" class="w-100 mh-100" alt="...">
+										<img src="/assets/upload/main/20Sep2022/menu_3.jpg" class="d-block w-100 mh-100" alt="...">
+									</div>
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="0" class="active menu-indi" aria-current="true"></button>
+										<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="1" class="menu-indi"></button>
+										<button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="2" class="menu-indi"></button>
 									</div>
 								</div>
-								<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Next</span>
-								</button> -->
 							</div>
 						</div>
 					</div>
@@ -329,8 +302,6 @@ function fnLink( _burl, _tergetYn){
 	<script src="/assets/js/lib/swiper.min.js"></script><!--20210120 ie error-->
 	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 	<script>
-		var myCarousel = document.querySelector('#carouselMenu');
-		var carousel = new bootstrap.Carousel(myCarousel);
 		//fullpage position
 		var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
 		$(document).on('focusin', focusableElementsString, checkFocus);
@@ -374,7 +345,7 @@ function fnLink( _burl, _tergetYn){
 				}
 			},
 			onLeave: function (index, nextIndex, direction) {
-				console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+				// console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
 
 				if (index == 1 && direction == 'down') {
 					$('#header').addClass('fixed');

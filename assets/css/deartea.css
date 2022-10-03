@@ -33,13 +33,12 @@ p{-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;}
 	font-family: 'GFS Didot';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/gfs-didot-v10-greek-regular.eot');
+	/* src: url('../fonts/gfs-didot-v10-greek-regular.eot'); */
 	src: local(''),
-		url('../fonts/gfs-didot-v10-greek-regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/gfs-didot-v10-greek-regular.woff2') format('woff2'),
-		url('../fonts/gfs-didot-v10-greek-regular.woff') format('woff'),
-		url('../fonts/gfs-didot-v10-greek-regular.ttf') format('truetype'),
-		url('../fonts/gfs-didot-v10-greek-regular.svg#GFSDidot') format('svg');
+		url('../font/gfs-didot-v10-greek-regular.woff2') format('woff2'),
+		url('../font/KozGoPr6N-Regular.otf') format("opentype"),
+		url('../font/SourceSerifVariable-Roman.otf') format("opentype"),
+		url('../font/BELLI.TTF')   format('truetype');
 }
 h1,h2,h3,h4,h5,h6,
 body.opened-full-nav .header .gnb a,
@@ -264,7 +263,7 @@ body.opened-full-nav .header .btn.menu-close{position:absolute;top:60px;right:60
 .menu-wrapper{z-index: -1;}
 .section-title.small{font-size:3.375rem;line-height: 1.24;letter-spacing: -.068rem;}
 .text-label{font-weight: 500;line-height: 1.625;letter-spacing:.3rem;color: #db5166; text-transform: uppercase;}  
-/* 추가 : 2022.05.09 배경이미지 변경으로 인한 글짜 색상 변경   */
+
 .text-label-0509{font-weight: 500;line-height: 1.625;letter-spacing:.3rem;color: #fff; text-transform: uppercase;}
 .line-title{position:relative;display:inline-block;padding:12px 53px;text-align:center;border:1px solid #331115;border-width:0px 0 1px;font-size:2.5rem;line-height: 1.25;}
 @media (min-width:751px) and (max-width:1024px){
@@ -784,13 +783,18 @@ td[data-column="status"]{color:#db5166;}
 	.item.justify.ending .title:before{top:-92px;height:8vw;}
 	.main-menu.justify.ending .title:before{top:45%;height:8vw;}
 	.main-menu.justify.ending .text-wrap{margin-top:80px}
-	.img-wrap-menu img{display:block;width:90%;height:auto;margin-left: auto;margin-right: auto;margin-top: 5%;}
+	.img-wrap-menu img{display:none;width:90%;height:auto;margin-left: auto;margin-right: auto;margin-top: 5%;}
 }
 
 
 /*
 	main
 */
+
+/* set carousel indicator background color */
+.menu-indi{
+	background-color: #85232c !important;
+}
 #secFooter{height:200px;}
 #content.home > .section{height:100%;}
 #content.home > .section:not(.tea):not(.story):not(.store) .section-title.medium{margin-top:28px;}
@@ -977,14 +981,14 @@ td[data-column="status"]{color:#db5166;}
 
 
 @media (min-width:750px) and (max-width:1024px){
-	#content.home .section.store .bg-area{position:absolute;left:auto;right:auto;bottom:10px;width:100%;height:100%;background: url('../upload/main/20Sep2022/menu.jpg') no-repeat center 0;
-		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: 100% auto
+	#content.home .section.store .bg-area{position:absolute;left:auto;right:auto;top:20%;width:100%;height:100%;background: url('../upload/main/20Sep2022/menu.jpg') no-repeat center 0;
+		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: 100% auto; z-index: -1;
 	}
 }
 
 @media (min-width:1024px){
-	#content.home .section.store .bg-area{position:absolute;left:auto;right:auto;bottom:70px;width:100%;height:100%;background: url('../upload/main/20Sep2022/menu.jpg') no-repeat center 0;
-		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: 85% 100%;
+	#content.home .section.store .bg-area{position:absolute;left:auto;right:auto;bottom:10px;width:100%;height:100%;background: url('../upload/main/20Sep2022/menu.jpg') no-repeat center 0;
+		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: 85% 100%; z-index: -1;
 	}
 }
 
@@ -1119,6 +1123,7 @@ td[data-column="status"]{color:#db5166;}
 @media (max-width:750px){
 	#wrap.sub #content:not(.values){padding-bottom:13.333vw;}
 	.sub #content .section[class*="-header"] .section-title {margin-top:4vw;}
+	#content.home .section.values .bg-area{top:30px;}
 }
 
 /*
