@@ -43,7 +43,7 @@
 <script src="/assets/js/jquery-2.2.4.min.js"></script>
 <script src="/assets/js/lib/wow.js"></script>
 <script src="/assets/js/common.js"></script>
-<link type="text/css" href="/assets/css/g_goncha.css" rel="stylesheet" />
+<link type="text/css" href="/assets/css/deartea.css" rel="stylesheet" />
 <script type="text/javascript" src="/assets/js/check.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.form.min.js" charset="utf-8"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/assets/images/common/favicon.ico" /><!--2021-05-20::추가-->
@@ -74,7 +74,7 @@
 
 <div id="wrap" class="sub">
 	<header id="header" class="header" data-wow-duration="2s">
-		<h1><a href="/web/main" class="logo"><span class="blind">Goncha</span></a></h1>
+		<h1><a href="/web/main" class="logo"><span class="blind">Deartea</span></a></h1>
 		<nav id="menu" class="nav">
 			<button type="button" class="btn menu-open"><span class="blind">menu</span></button>
 			<ul class="gnb">
